@@ -1290,3 +1290,20 @@ inp:focus{
         margin-left:740px ;
     }
 }
+
+/* Ensure consistency for Who We Work With images */
+.vendor-carousel img {
+    max-width: 150px; /* Set a consistent width */
+    max-height: 80px; /* Set a consistent height */
+    object-fit: contain; /* Maintain aspect ratio and prevent distortion */
+    margin: auto; /* Center the images */
+    padding: 10px; /* Add spacing */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .vendor-carousel img {
+        max-width: 120px;
+        max-height: 60px;
+    }
+}
