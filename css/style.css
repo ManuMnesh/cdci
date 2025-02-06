@@ -1307,3 +1307,56 @@ inp:focus{
         max-height: 60px;
     }
 }
+
+.content-body {
+    padding: 30px 0;
+}
+
+.service-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-section {
+    margin-bottom: 50px;
+}
+
+.service-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.service-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.service-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.service-btn i {
+    margin-left: 8px;
+}
+
+.row img {
+    border-radius: 10px;
+}
+
+.innerpage-wrapper {
+    background-color: #f8f9fa;
+}
