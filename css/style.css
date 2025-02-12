@@ -1360,3 +1360,9 @@ inp:focus{
 .innerpage-wrapper {
     background-color: #f8f9fa;
 }
+
+#suggestionsList {
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1050; /* Higher than modal */
+}

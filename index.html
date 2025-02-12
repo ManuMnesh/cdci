@@ -129,7 +129,7 @@
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
+          <!-- Bootstrap Modal Search -->
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
@@ -138,62 +138,96 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                        <div class="input-group w-75 mx-auto position-relative">
+                            <input type="search" id="searchInput" class="form-control p-3" placeholder="Type to search...">
+                            <span id="searchButton" class="btn bg-light border input-group-text p-3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <ul id="suggestionsList" class="list-group position-absolute w-100 mt-2"></ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search End -->
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-start">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Governance and Accountability</h1>
+                                        <p class="mb-5 fs-5">CDCI understands the extensiveness of the Governance and Accountability sector as it cuts across both the public and private sectors.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 animated fadeInRight">
+                                    <div class="carousel-img">
+                                        <img src="img/african-business-male-people-shaking-hands.jpg" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-4 align-items-center">
+                                <div class="col-lg-5 animated fadeInLeft">
+                                    <div class="carousel-img">
+                                        <img src="img/water and sanitation.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 animated fadeInRight">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Water, Sanitation and Health (WASH)</h1>
+                                        <p class="mb-5 fs-5">Development and implementation of community-based WASH management models – this entails feasibility studies and the development of appropriate management models.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Carousel Start -->
-        <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item bg-primary">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-lg-7 animated fadeInLeft">
-                                <div class="text-sm-center text-md-start">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
-                                    <h1 class="display-1 text-white mb-4">Governance and Accountability</h1>
-                                    <p class="mb-5 fs-5">CDCI understands the extensiveness of the Governance and Accountability sector as it cuts across both the public and private sectors.
-                                    </p>
-                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Our Projects</a>
-                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-start">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Trade and Logistics</h1>
+                                        <p class="mb-5 fs-5">CDCI understands the extensiveness of the Governance and Accountability sector as it cuts across both the public and private sectors.</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 animated fadeInRight">
-                                <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/african-business-male-people-shaking-hands.jpg" class="img-fluid w-100" alt="">
+                                <div class="col-lg-5 animated fadeInRight">
+                                    <div class="carousel-img">
+                                        <img src="img/trade-logistics.jpg" class="img-fluid w-100" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="header-carousel-item bg-primary">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
-                            <div class="col-lg-5 animated fadeInLeft">
-                                <div class="calrousel-img">
-                                    <img src="img/water and sanitation.png" class="img-fluid w-100" alt="">
+
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-4 align-items-center">
+                                <div class="col-lg-5 animated fadeInLeft">
+                                    <div class="carousel-img">
+                                        <img src="img/agriculture.jpg" class="img-fluid w-100" alt="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 animated fadeInRight">
-                                <div class="text-sm-center text-md-end">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
-                                    <h1 class="display-1 text-white mb-4">Water, Sanitation and Health (WASH)</h1>
-                                    <p class="mb-5 fs-5">Development and implementation of community-based WASH management models – this entails feasibility studies and the development of appropriate management models.
-                                    </p>
-                                    <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
-                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Our Projects</a>
-                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                <div class="col-lg-7 animated fadeInRight">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Agriculture and Food Security</h1>
+                                        <p class="mb-5 fs-5">Food security worldwide is increasingly causing concern more so in developing countries with the most vulnerable being the smallholder farmers.</p>
                                     </div>
                                 </div>
                             </div>
@@ -201,58 +235,8 @@
                     </div>
                 </div>
             </div>
-            <div class="header-carousel-item bg-primary">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row g-4 align-items-center">
-                            <div class="col-lg-7 animated fadeInLeft">
-                                <div class="text-sm-center text-md-start">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
-                                    <h1 class="display-1 text-white mb-4">Trade and Logisticts</h1>
-                                    <p class="mb-5 fs-5">CDCI understands the extensiveness of the Governance and Accountability sector as it cuts across both the public and private sectors.
-                                    </p>
-                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
-                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Our Projects</a>
-                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 animated fadeInRight">
-                                <div class="calrousel-img" style="object-fit: cover;">
-                                    <img src="img/trade-logistics.jpg" class="img-fluid w-100" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-carousel-item bg-primary">
-                <div class="carousel-caption">
-                    <div class="container">
-                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
-                            <div class="col-lg-5 animated fadeInLeft">
-                                <div class="calrousel-img">
-                                    <img src="img/agriculture.jpg" class="img-fluid w-100" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7 animated fadeInRight">
-                                <div class="text-sm-center text-md-end">
-                                    <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
-                                    <h1 class="display-1 text-white mb-4">Agriculture and Food Security</h1>
-                                    <p class="mb-5 fs-5">Food security worldwide is increasingly causing concern more so in developing countries with the most vulnerable being the smallholder farmers. 
-                                    </p>
-                                    <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
-                                        <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Our Projects</a>
-                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
+            <!-- Carousel End -->
+
         <!-- Feature Start -->
         <div class="container-fluid feature bg-light py-5">
             <div class="container py-5">
