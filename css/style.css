@@ -1366,3 +1366,103 @@ inp:focus{
     overflow-y: auto;
     z-index: 1050; /* Higher than modal */
 }
+
+/* Team Section Styling */
+.team-card {
+    width: 100%; /* Makes the card take full width of the column */
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.team-card img {
+    width: 90px; /* Adjusted image size for better fit */
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #37517e;
+}
+
+.team-card .ps-3 {
+    flex: 1; /* Ensures text content takes available space */
+}
+
+.team-card h5 {
+    color: #37517e;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.team-card span {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.team-card .location-tag {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: #37517e;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .team-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .team-card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .team-card .ps-3 {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-card h5 {
+        font-size: 1.1rem;
+    }
+
+    .team-card span, .team-card .location-tag, .team-card p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1rem;
+    }
+}
