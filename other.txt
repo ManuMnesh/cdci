@@ -1,165 +1,118 @@
-          <!-- Team Start -->
-          <div class="container-fluid blog">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Team</h4>
-                    <h1 class="display-4 mb-4">Our Team Members</h1>
-                    <p class="mb-0">Our staff brings together decades of experience and impact at developing solutions to some of the world’s 
-                        most challenging issues.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="d-flex justify-content-evenly flex-wrap">
-                        <!-- John Nguri -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/07/team-img-1.jpg" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">John Nguri</h5>
-                                        <span class="text-muted">Co-Founder, President</span>
-                                        <p class="location-tag">📍 Based in Kenya</p>
-                                        <p class="mt-2 text-dark">Financial and economic consultant with 33+ years of experience.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Charles Onchoke -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/07/team-img-2.jpg" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">Charles Onchoke</h5>
-                                        <span class="text-muted">Co-Founder</span>
-                                        <p class="location-tag">📍 Based in Nairobi, Kenya</p>
-                                        <p class="mt-2 text-dark">Public finance expert with 30+ years of experience.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Elisabete Antunes -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/07/Elisabete_Antunes.jpg" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">Elisabete Antunes</h5>
-                                        <span class="text-muted">Business Development</span>
-                                        <p class="location-tag">📍 Based in Portugal</p>
-                                        <p class="mt-2 text-dark">Leads proposal management for major organizations.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Virginia Mwangi -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/07/IMG-20221107-WA0007.jpg" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">Virginia Mwangi</h5>
-                                        <span class="text-muted">Agribusiness Development</span>
-                                        <p class="location-tag">📍 Based in Kenya</p>
-                                        <p class="mt-2 text-dark">Specialist in agricultural value chains and business models.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Jane Wairimu -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/11/Wairimu.jpg" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">Jane Wairimu</h5>
-                                        <span class="text-muted">Accountant</span>
-                                        <p class="location-tag">📍 Based in Kenya</p>
-                                        <p class="mt-2 text-dark">Coordinating the implementation of the KISIP II project.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Michael Nguri -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/11/Michael.png" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">Michael Nguri</h5>
-                                        <span class="text-muted">Financial Analyst</span>
-                                        <p class="location-tag">📍 Based in Kenya</p>
-                                        <p class="mt-2 text-dark">Financial analyst with 10+ years in economic modeling.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                        <!-- Robert Ndumbi -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card team-card p-3 shadow">
-                                <div class="d-flex align-items-center">
-                                    <img src="https://cdci-global.com/wp-content/uploads/2022/11/Robert-Profile-Photo.jpg" class="card-image">
-                                    <div class="ps-3">
-                                        <h5 class="mb-0">Robert Ndumbi</h5>
-                                        <span class="text-muted">Economist</span>
-                                        <p class="location-tag">📍 Based in Kenya</p>
-                                        <p class="mt-2 text-dark">Expert in trade, business development, and feasibility studies.</p>
-                                        <div class="social-icons">
-                                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div>
-                </div>
-            </div>
-        </div>
+To replace the placeholder images with relevant images from the web, you can use image URLs from free stock photo websites like **Unsplash**, **Pexels**, or **Pixabay**. Below, I’ve provided example image URLs for each section based on the project descriptions. You can replace the `src="placeholder.jpg"` with these URLs or find similar images that match your needs.
 
+---
 
-         <!-- 404 Start -->
-        <div class="container-fluid bg-light py-5">
-            <div class="container py-5 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <i class="far fa-frown-open display-1 text-primary mb-4" style="width: 80px; height: 80px;"></i>
-                        <h1 class="display-1">404</h1>
-                        <h1 class="mb-4">Page Not Found</h1>
-                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="index.html">Go Back To Home</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 404 End -->
+### Governance and Accountability Section
+
+1. **Kenya - Independent Fiduciary Agency for KISIP II**  
+   Image: `https://images.unsplash.com/photo-1521791136064-7986c2920216`  
+   (Replace with an image related to governance or infrastructure projects.)
+
+2. **Rwanda - District Revenue and Expenditure Management Services**  
+   Image: `https://images.unsplash.com/photo-1554224155-6726b3ff858f`  
+   (Replace with an image related to financial management or city planning.)
+
+3. **Nairobi - Budgeting & Transport Planning Support**  
+   Image: `https://images.unsplash.com/photo-1481137344492-d5a585a60d66`  
+   (Replace with an image related to urban transport or city planning.)
+
+4. **Kenya - Technical Assistance for KISIP**  
+   Image: `https://images.unsplash.com/photo-1522071820081-009f0129c71c`  
+   (Replace with an image related to teamwork or project management.)
+
+5. **Mombasa - Productivity Improvement at Mombasa Port**  
+   Image: `https://images.unsplash.com/photo-1601050690597-df0568f70950`  
+   (Replace with an image related to ports or logistics.)
+
+---
+
+### Agriculture and Food Security Section
+
+1. **Liberia - Regulatory Framework for Agricultural Commodities Market**  
+   Image: `https://images.unsplash.com/photo-1464226184884-fa280b87c399`  
+   (Replace with an image related to agriculture or farming.)
+
+2. **Ghana - Economic Impact Assessment for Agribusiness Reforms**  
+   Image: `https://images.unsplash.com/photo-1551649001-7a2485550a1a`  
+   (Replace with an image related to agribusiness or farming.)
+
+3. **Malawi - Agro-Processing Special Economic Zones**  
+   Image: `https://images.unsplash.com/photo-1551649001-7a2485550a1a`  
+   (Replace with an image related to food processing or economic zones.)
+
+4. **Rwanda - Turnaround Program for Tea Cooperatives**  
+   Image: `https://images.unsplash.com/photo-1597318181409-c9130654967f`  
+   (Replace with an image related to tea farming or cooperatives.)
+
+5. **Kenya - Feasibility Study for a National Tea Value Addition Facility**  
+   Image: `https://images.unsplash.com/photo-1597318181409-c9130654967f`  
+   (Replace with an image related to tea production or value addition.)
+
+---
+
+### Water, Sanitation, and Health (WASH) Section
+
+1. **Mombasa, Kenya - Business Strategy & Financial Management for Six WSPs**  
+   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
+   (Replace with an image related to water management or infrastructure.)
+
+2. **Kenya - Technical & Financial Audit of Water Services Boards**  
+   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
+   (Replace with an image related to water services or audits.)
+
+3. **Nairobi, Kenya - Feasibility Study for Nairobi Sanitation OBA Project**  
+   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
+   (Replace with an image related to sanitation or water services.)
+
+4. **Kenya - Institutionalization of Four Rural Water Schemes**  
+   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
+   (Replace with an image related to rural water systems.)
+
+5. **Kenya - Market Assessment of the Safe Water Market**  
+   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
+   (Replace with an image related to safe water solutions.)
+
+---
+
+### Trade & Logistics Section
+
+1. **Liberia - Establishing a Regulatory Framework for The Agricultural Commodities Market**  
+   Image: `https://images.unsplash.com/photo-1464226184884-fa280b87c399`  
+   (Replace with an image related to agriculture or trade.)
+
+2. **Kenya - Transaction Advisory for Berth Conversions & Privatization**  
+   Image: `https://images.unsplash.com/photo-1601050690597-df0568f70950`  
+   (Replace with an image related to ports or logistics.)
+
+3. **Kenya - Business Model for Kenya National Single Window System**  
+   Image: `https://images.unsplash.com/photo-1554224155-6726b3ff858f`  
+   (Replace with an image related to trade or digital systems.)
+
+4. **Kenya - Study on Northern Corridor County Laws & Transport Costs**  
+   Image: `https://images.unsplash.com/photo-1481137344492-d5a585a60d66`  
+   (Replace with an image related to transport or logistics.)
+
+---
+
+### Other Sectors Section
+
+1. **Kenya - Gap Analysis & Enhancements for Kenya National Electronic Single Window**  
+   Image: `https://images.unsplash.com/photo-1554224155-6726b3ff858f`  
+   (Replace with an image related to digital systems or trade.)
+
+2. **Kenya - Bus Rapid Transport (BRT) Transaction Advisory**  
+   Image: `https://images.unsplash.com/photo-1481137344492-d5a585a60d66`  
+   (Replace with an image related to public transport or urban mobility.)
+
+3. **Regional Africa - AFRALTI Five-Year Strategic Plan (2022-2027)**  
+   Image: `https://images.unsplash.com/photo-1521791136064-7986c2920216`  
+   (Replace with an image related to ICT or strategic planning.)
+
+---
+
+### Notes:
+- Ensure the images are high-quality and relevant to the project descriptions.
+- Use proper attribution if required by the image source (e.g., Unsplash).
+- You can also upload your own images to a hosting service (e.g., AWS S3, Imgur) and use those URLs.
+
+Let me know if you need further assistance!
