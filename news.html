@@ -320,51 +320,41 @@
 
     <!-- Move the script outside any container -->
     <script>
-      const API_KEY = "0acc6f766c7b4ebdbe1bb2d419e49ab2"; // Replace with your actual API key
+      const API_KEY = "85bc70fe5bfd6529b2047d9f6b58856d"; // Replace with your actual API key
       const CATEGORIES = ["governance", "agriculture", "wash", "trade"];
 
       class NewsAPI {
         constructor(apiKey) {
           this.apiKey = apiKey;
-          this.baseUrl = "https://newsapi.org/v2/everything";
+          this.baseUrl = "https://gnews.io/api/v4/search"; // GNews API base URL
         }
 
         async fetchNews(category) {
           try {
             const query = this.buildQuery(category);
-            const response = await fetch(`${this.baseUrl}?${query}`);
+            const response = await fetch(
+              `${this.baseUrl}?${query}&token=${this.apiKey}`
+            );
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            console.log("API Response:", data);
-            return data;
+            console.log("API Response:", data); // Debug log
+            return data.articles; // Adjust based on the API response structure
           } catch (error) {
             console.error("Error fetching news:", error);
-            return { articles: [] }; // Return empty articles array on error
+            return []; // Return empty array on error
           }
         }
 
         buildQuery(category) {
           const queryParams = new URLSearchParams({
-            apiKey: this.apiKey,
-            language: "en",
-            sortBy: "publishedAt",
-            pageSize: 12,
-            q: this.getSearchTerms(category),
+            q: category, // Search query based on category
+            lang: "en", // Language filter
+            sort: "relevance", // Sort by relevance
+            // Add other parameters as needed
           });
           return queryParams.toString();
-        }
-
-        getSearchTerms(category) {
-          const terms = {
-            governance: "governance consulting development accountability",
-            agriculture: "agricultural development food security farming",
-            wash: "water sanitation health infrastructure",
-            trade: "trade logistics supply chain development",
-            all: "consulting development infrastructure projects",
-          };
-          return terms[category] || terms.all;
         }
       }
 
@@ -503,7 +493,7 @@
             newsUI.showLoader();
             try {
               const news = await newsApi.fetchNews(category);
-              newsUI.displayNews(news.articles);
+              newsUI.displayNews(news);
               document.getElementById("currentCategory").textContent =
                 category.charAt(0).toUpperCase() + category.slice(1);
             } catch (error) {
@@ -518,7 +508,7 @@
         newsUI.showLoader();
         try {
           const news = await newsApi.fetchNews("all");
-          newsUI.displayNews(news.articles);
+          newsUI.displayNews(news);
         } catch (error) {
           console.error("Error fetching initial news:", error);
         } finally {
