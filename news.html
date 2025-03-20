@@ -340,6 +340,19 @@
             }
             const data = await response.json();
             console.log("API Response:", data); // Debug log
+
+            // Create a Set to track unique article URLs
+            const uniqueArticles = new Set();
+            const filteredArticles = data.articles.filter((article) => {
+              // Check if the article URL is already in the Set
+              if (!uniqueArticles.has(article.url)) {
+                uniqueArticles.add(article.url); // Add the URL to the Set
+                return true; // Keep this article
+              }
+              return false; // Filter out this article
+            });
+
+            return filteredArticles; // Return only unique articles
             return data.articles; // Adjust based on the API response structure
           } catch (error) {
             console.error("Error fetching news:", error);
@@ -383,7 +396,29 @@
               </div>`;
             return;
           }
-          this.container.innerHTML = articles
+
+          // Create a Set to track unique article URLs
+          const uniqueArticles = new Set();
+          const filteredArticles = articles.filter((article) => {
+            // Check if the article URL is already in the Set
+            if (!uniqueArticles.has(article.url)) {
+              uniqueArticles.add(article.url); // Add the URL to the Set
+              return true; // Keep this article
+            }
+            return false; // Filter out this article
+          });
+
+          // Check for duplicates in the filtered articles
+          const finalArticles = [];
+          const finalUniqueSet = new Set();
+          filteredArticles.forEach((article) => {
+            if (!finalUniqueSet.has(article.url)) {
+              finalUniqueSet.add(article.url);
+              finalArticles.push(article);
+            }
+          });
+
+          this.container.innerHTML = finalArticles
             .map((article) => this.createNewsCard(article))
             .join("");
         }
