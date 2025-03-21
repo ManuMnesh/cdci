@@ -1,118 +1,28 @@
-To replace the placeholder images with relevant images from the web, you can use image URLs from free stock photo websites like **Unsplash**, **Pexels**, or **Pixabay**. Below, I’ve provided example image URLs for each section based on the project descriptions. You can replace the `src="placeholder.jpg"` with these URLs or find similar images that match your needs.
-
----
-
-### Governance and Accountability Section
-
-1. **Kenya - Independent Fiduciary Agency for KISIP II**  
-   Image: `https://images.unsplash.com/photo-1521791136064-7986c2920216`  
-   (Replace with an image related to governance or infrastructure projects.)
-
-2. **Rwanda - District Revenue and Expenditure Management Services**  
-   Image: `https://images.unsplash.com/photo-1554224155-6726b3ff858f`  
-   (Replace with an image related to financial management or city planning.)
-
-3. **Nairobi - Budgeting & Transport Planning Support**  
-   Image: `https://images.unsplash.com/photo-1481137344492-d5a585a60d66`  
-   (Replace with an image related to urban transport or city planning.)
-
-4. **Kenya - Technical Assistance for KISIP**  
-   Image: `https://images.unsplash.com/photo-1522071820081-009f0129c71c`  
-   (Replace with an image related to teamwork or project management.)
-
-5. **Mombasa - Productivity Improvement at Mombasa Port**  
-   Image: `https://images.unsplash.com/photo-1601050690597-df0568f70950`  
-   (Replace with an image related to ports or logistics.)
-
----
-
-### Agriculture and Food Security Section
-
-1. **Liberia - Regulatory Framework for Agricultural Commodities Market**  
-   Image: `https://images.unsplash.com/photo-1464226184884-fa280b87c399`  
-   (Replace with an image related to agriculture or farming.)
-
-2. **Ghana - Economic Impact Assessment for Agribusiness Reforms**  
-   Image: `https://images.unsplash.com/photo-1551649001-7a2485550a1a`  
-   (Replace with an image related to agribusiness or farming.)
-
-3. **Malawi - Agro-Processing Special Economic Zones**  
-   Image: `https://images.unsplash.com/photo-1551649001-7a2485550a1a`  
-   (Replace with an image related to food processing or economic zones.)
-
-4. **Rwanda - Turnaround Program for Tea Cooperatives**  
-   Image: `https://images.unsplash.com/photo-1597318181409-c9130654967f`  
-   (Replace with an image related to tea farming or cooperatives.)
-
-5. **Kenya - Feasibility Study for a National Tea Value Addition Facility**  
-   Image: `https://images.unsplash.com/photo-1597318181409-c9130654967f`  
-   (Replace with an image related to tea production or value addition.)
-
----
-
-### Water, Sanitation, and Health (WASH) Section
-
-1. **Mombasa, Kenya - Business Strategy & Financial Management for Six WSPs**  
-   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
-   (Replace with an image related to water management or infrastructure.)
-
-2. **Kenya - Technical & Financial Audit of Water Services Boards**  
-   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
-   (Replace with an image related to water services or audits.)
-
-3. **Nairobi, Kenya - Feasibility Study for Nairobi Sanitation OBA Project**  
-   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
-   (Replace with an image related to sanitation or water services.)
-
-4. **Kenya - Institutionalization of Four Rural Water Schemes**  
-   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
-   (Replace with an image related to rural water systems.)
-
-5. **Kenya - Market Assessment of the Safe Water Market**  
-   Image: `https://images.unsplash.com/photo-1508780709619-79562169bc64`  
-   (Replace with an image related to safe water solutions.)
-
----
-
-### Trade & Logistics Section
-
-1. **Liberia - Establishing a Regulatory Framework for The Agricultural Commodities Market**  
-   Image: `https://images.unsplash.com/photo-1464226184884-fa280b87c399`  
-   (Replace with an image related to agriculture or trade.)
-
-2. **Kenya - Transaction Advisory for Berth Conversions & Privatization**  
-   Image: `https://images.unsplash.com/photo-1601050690597-df0568f70950`  
-   (Replace with an image related to ports or logistics.)
-
-3. **Kenya - Business Model for Kenya National Single Window System**  
-   Image: `https://images.unsplash.com/photo-1554224155-6726b3ff858f`  
-   (Replace with an image related to trade or digital systems.)
-
-4. **Kenya - Study on Northern Corridor County Laws & Transport Costs**  
-   Image: `https://images.unsplash.com/photo-1481137344492-d5a585a60d66`  
-   (Replace with an image related to transport or logistics.)
-
----
-
-### Other Sectors Section
-
-1. **Kenya - Gap Analysis & Enhancements for Kenya National Electronic Single Window**  
-   Image: `https://images.unsplash.com/photo-1554224155-6726b3ff858f`  
-   (Replace with an image related to digital systems or trade.)
-
-2. **Kenya - Bus Rapid Transport (BRT) Transaction Advisory**  
-   Image: `https://images.unsplash.com/photo-1481137344492-d5a585a60d66`  
-   (Replace with an image related to public transport or urban mobility.)
-
-3. **Regional Africa - AFRALTI Five-Year Strategic Plan (2022-2027)**  
-   Image: `https://images.unsplash.com/photo-1521791136064-7986c2920216`  
-   (Replace with an image related to ICT or strategic planning.)
-
----
-
-### Notes:
-- Ensure the images are high-quality and relevant to the project descriptions.
-- Use proper attribution if required by the image source (e.g., Unsplash).
-- You can also upload your own images to a hosting service (e.g., AWS S3, Imgur) and use those URLs.
-
-Let me know if you need further assistance!
+I'll help you identify the correct project IDs from the projects.html file. Looking at the "Read More" links, here are all the project IDs in order:
+Governance and Accountability Section:
+kisip-ii
+revenue-management
+transport-planning
+technical-assistance
+productivity-improvement
+Agriculture and Food Security Section:
+agricultural-commodities
+agribusiness-reforms
+agro-processing
+tea-cooperatives
+tea-value-addition
+Water, Sanitation, and Health (WASH) Section:
+water-services
+water-management
+rural-water
+rural-water-infrastructure
+water-market-assessment
+Trade & Logistics Section:
+trade-and-logistics
+port-operations
+digital-business-systems
+transport-corridor-analysis
+Other Sectors Section:
+kenya-national-electronic-single-window
+bus-rapid-transport
+afrlti
