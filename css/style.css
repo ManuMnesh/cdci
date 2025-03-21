@@ -1711,3 +1711,12 @@ inp:focus {
 .news-search button:hover {
   background: var(--bs-dark);
 }
+
+.highlight {
+    animation: highlightFade 2s;
+}
+
+@keyframes highlightFade {
+    0% { background-color: rgba(var(--bs-primary-rgb), 0.2); }
+    100% { background-color: transparent; }
+}

@@ -122,7 +122,7 @@
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary mb-0">
               <i class="fab fa-slack me-2"></i> CDCI Global
             </h1>
@@ -138,7 +138,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <div class="nav-item dropdown active">
                 <a href="" class="nav-link" data-bs-toggle="dropdown">
                   <span class="dropdown-toggle">About Us</span>
@@ -195,46 +195,47 @@
       </div>
     </div>
     <!-- Navbar & Hero End -->
-    <!-- Modal Search Start -->
-    <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+
+        <!-- Bootstrap Modal Search -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content rounded-0">
+                  <div class="modal-header bg-primary">
+                      <h5 class="modal-title text-white" id="searchModalLabel">
+                          <i class="fas fa-search me-2"></i>Search CDCI Global
+                      </h5>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <!-- Search Input -->
+                      <div class="container">
+                          <div class="input-group mb-4">
+                              <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Type to search...">
+                              <button class="btn btn-primary" type="button" id="searchButton">
+                                  <i class="fas fa-search"></i>
+                              </button>
+                          </div>
+
+                          <!-- Quick Navigation -->
+                          <div class="quick-nav mb-4">
+                              <h6 class="text-primary mb-2">Quick Navigation:</h6>
+                              <div class="d-flex flex-wrap gap-2" id="quickNavButtons">
+                                  <!-- Quick nav buttons will be inserted here -->
+                              </div>
+                          </div>
+
+                          <!-- Search Results -->
+                          <div id="searchResults" class="mt-4" style="display: none;">
+                              <h6 class="text-primary mb-3">Search Results: <span id="resultCount" class="badge bg-primary">0</span></h6>
+                              <div id="resultsList" class="list-group">
+                                  <!-- Results will be inserted here -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-    <!-- Modal Search End -->
 
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
@@ -344,10 +345,10 @@
                 <!-- Company Information -->
                 <div class="col-md-6 col-lg-6 col-xl-5">
                   <div class="footer-item">
-                    <a href="https://cdci-global.com" class="p-0">
+                    <a href="index.html" class="p-0">
                       <h3 class="text-white">
                         <img
-                          src="https://cdci-global.com/wp-content/uploads/2022/07/logo.png"
+                          src="img/logo.png"
                           alt="CDCI Logo"
                           class="img-fluid"
                           style="max-width: 150px"
@@ -356,28 +357,16 @@
                     </a>
                     <h4 class="text-white mt-3">Follow Us</h4>
                     <div class="footer-btn d-flex">
-                      <a
-                        class="btn btn-md-square rounded-circle me-3"
-                        href="https://twitter.com/"
-                        target="_blank"
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
                         ><i class="fab fa-twitter"></i
                       ></a>
-                      <a
-                        class="btn btn-md-square rounded-circle me-3"
-                        href="https://www.facebook.com/"
-                        target="_blank"
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
                         ><i class="fab fa-facebook-f"></i
                       ></a>
-                      <a
-                        class="btn btn-md-square rounded-circle me-3"
-                        href="https://www.instagram.com/"
-                        target="_blank"
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
                         ><i class="fab fa-instagram"></i
                       ></a>
-                      <a
-                        class="btn btn-md-square rounded-circle me-0"
-                        href="https://www.linkedin.com/"
-                        target="_blank"
+                      <a class="btn btn-md-square rounded-circle me-0" href="#"
                         ><i class="fab fa-linkedin-in"></i
                       ></a>
                     </div>
@@ -388,26 +377,33 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                   <div class="footer-item">
                     <h4 class="text-white mb-4">Quick Links</h4>
-                    <a href="https://cdci-global.com/"
+                    <a href="index.html"
                       ><i class="fas fa-angle-right me-2"></i> Home</a
                     >
-                    <a href="https://cdci-global.com/about-us/"
+                    <a href="about.html"
                       ><i class="fas fa-angle-right me-2"></i> About Us</a
                     >
-                    <a href="https://cdci-global.com/services/"
+                    <a href="services.html"
                       ><i class="fas fa-angle-right me-2"></i> Services</a
                     >
-                    <a href="https://cdci-global.com/projects/"
+                    <a href="projects.html"
                       ><i class="fas fa-angle-right me-2"></i> Projects</a
                     >
-                    <a href="https://cdci-global.com/team/"
+                    <a href="team.html"
                       ><i class="fas fa-angle-right me-2"></i> Team</a
                     >
-                    <a href="https://cdci-global.com/news/"
+                    <a href="news.html"
                       ><i class="fas fa-angle-right me-2"></i> News</a
                     >
-                    <a href="https://cdci-global.com/contact-us/"
+                    <a href="contact.html"
                       ><i class="fas fa-angle-right me-2"></i> Contact Us</a
+                    >
+                    <a href="commitment-to-quality.html"
+                      ><i class="fas fa-angle-right me-2"></i> Quality
+                      Commitment</a
+                    >
+                    <a href="blog-detail.html"
+                      ><i class="fas fa-angle-right me-2"></i> Blog</a
                     >
                   </div>
                 </div>
@@ -416,15 +412,19 @@
                 <div class="col-md-6 col-lg-6 col-xl-4">
                   <div class="footer-item">
                     <h4 class="text-white mb-4">Sectors We Specialize In</h4>
-                    <a href="#"
+                    <a href="services.html#agriculture"
                       ><i class="fas fa-angle-right me-2"></i> Agribusiness</a
                     >
-                    <a href="#"
+                    <a href="services.html#governance"
                       ><i class="fas fa-angle-right me-2"></i> Governance</a
                     >
-                    <a href="#"
+                    <a href="services.html#wash"
                       ><i class="fas fa-angle-right me-2"></i> Water, Sanitation
                       & Health</a
+                    >
+                    <a href="services.html#trade"
+                      ><i class="fas fa-angle-right me-2"></i> Trade &
+                      Logistics</a
                     >
                   </div>
                 </div>
@@ -559,5 +559,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Search Javascript -->
+    <script src="js/search.js"></script>
   </body>
 </html>
