@@ -138,7 +138,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="index.html" class="nav-item nav-link ">Home</a>
               <div class="nav-item dropdown">
                 <a href="" class="nav-link" data-bs-toggle="dropdown">
                   <span class="dropdown-toggle">About Us</span>
@@ -153,7 +153,7 @@
               </div>
               <a href="services.html" class="nav-item nav-link">Services</a>
               <a href="projects.html" class="nav-item nav-link">Projects</a>
-              <a href="news.html" class="nav-item nav-link">News</a>
+              <a href="news.html" class="nav-item nav-link active">News</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
               <div class="nav-btn px-3">
                 <button
@@ -326,11 +326,28 @@
       class NewsAPI {
         constructor(apiKey) {
           this.apiKey = apiKey;
-          this.baseUrl = "https://gnews.io/api/v4/search"; // GNews API base URL
+          this.baseUrl = "https://gnews.io/api/v4/search";
+          this.categoryCache = new Map();
         }
 
         async fetchNews(category) {
           try {
+            if (category === "all") {
+              // Fetch articles from all categories and combine them
+              const allArticles = await this.fetchCombinedNews();
+
+              // Store in localStorage for the homepage
+              localStorage.setItem(
+                "cdciNewsCache",
+                JSON.stringify({
+                  timestamp: Date.now(),
+                  articles: allArticles,
+                })
+              );
+
+              return allArticles;
+            }
+
             const query = this.buildQuery(category);
             const response = await fetch(
               `${this.baseUrl}?${query}&token=${this.apiKey}`
@@ -339,35 +356,137 @@
               throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            console.log("API Response:", data); // Debug log
 
-            // Create a Set to track unique article URLs
-            const uniqueArticles = new Set();
-            const filteredArticles = data.articles.filter((article) => {
-              // Check if the article URL is already in the Set
-              if (!uniqueArticles.has(article.url)) {
-                uniqueArticles.add(article.url); // Add the URL to the Set
-                return true; // Keep this article
+            // Initialize cache for this category if it doesn't exist
+            if (!this.categoryCache.has(category)) {
+              this.categoryCache.set(category, new Map());
+            }
+
+            // Get cache for current category
+            const currentCache = this.categoryCache.get(category);
+
+            // Filter duplicates only within the current category
+            const uniqueArticles = data.articles.filter((article) => {
+              const compositeKey =
+                `${article.title}-${article.description}`.toLowerCase();
+              if (!currentCache.has(compositeKey)) {
+                currentCache.set(compositeKey, article);
+                return true;
               }
-              return false; // Filter out this article
+              return false;
             });
 
-            return filteredArticles; // Return only unique articles
-            return data.articles; // Adjust based on the API response structure
+            // Store the top 3 articles from each category in localStorage
+            if (category === "all") {
+              localStorage.setItem(
+                "cdciNewsCache",
+                JSON.stringify({
+                  timestamp: Date.now(),
+                  articles: uniqueArticles.slice(0, 12),
+                })
+              );
+            }
+
+            return uniqueArticles;
           } catch (error) {
-            console.error("Error fetching news:", error);
-            return []; // Return empty array on error
+            console.error(`Error fetching news for ${category}:`, error);
+            return [];
           }
         }
 
+        async fetchCombinedNews() {
+          try {
+            // Define the categories to fetch from
+            const categories = ["governance", "agriculture", "wash", "trade"];
+            const articlesPerCategory = 3; // Number of articles to take from each category
+
+            // Fetch articles from each category
+            const categoryPromises = categories.map((cat) => {
+              const query = this.buildQuery(cat);
+              return fetch(`${this.baseUrl}?${query}&token=${this.apiKey}`)
+                .then((response) => response.json())
+                .then((data) => ({
+                  category: cat,
+                  articles: data.articles.slice(0, articlesPerCategory),
+                }))
+                .catch((error) => {
+                  console.error(`Error fetching ${cat} news:`, error);
+                  return { category: cat, articles: [] };
+                });
+            });
+
+            // Wait for all requests to complete
+            const results = await Promise.all(categoryPromises);
+
+            // Combine and shuffle articles from all categories
+            let combinedArticles = [];
+            results.forEach((result) => {
+              combinedArticles = combinedArticles.concat(result.articles);
+            });
+
+            // Remove duplicates using title as key
+            const uniqueArticles = Array.from(
+              new Map(
+                combinedArticles.map((article) => [
+                  `${article.title}-${article.description}`.toLowerCase(),
+                  article,
+                ])
+              ).values()
+            );
+
+            // Shuffle the articles for variety
+            return this.shuffleArray(uniqueArticles);
+          } catch (error) {
+            console.error("Error fetching combined news:", error);
+            return [];
+          }
+        }
+
+        // Helper function to shuffle array
+        shuffleArray(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        }
+
         buildQuery(category) {
+          let searchQuery;
+          switch (category) {
+            case "governance":
+              searchQuery = "governance development policy";
+              break;
+            case "agriculture":
+              searchQuery = "agriculture farming development";
+              break;
+            case "wash":
+              searchQuery = "water sanitation hygiene development";
+              break;
+            case "trade":
+              searchQuery = "trade logistics development";
+              break;
+            default:
+              searchQuery = "international development consulting";
+              break;
+          }
+
           const queryParams = new URLSearchParams({
-            q: category, // Search query based on category
-            lang: "en", // Language filter
-            sort: "relevance", // Sort by relevance
-            // Add other parameters as needed
+            q: searchQuery,
+            lang: "en",
+            sortby: "publishedAt",
+            max: 12,
+            in: "title,description",
           });
           return queryParams.toString();
+        }
+
+        clearCache(category) {
+          if (category === "all") {
+            this.categoryCache.clear();
+          } else if (this.categoryCache.has(category)) {
+            this.categoryCache.get(category).clear();
+          }
         }
       }
 
@@ -397,28 +516,8 @@
             return;
           }
 
-          // Create a Set to track unique article URLs
-          const uniqueArticles = new Set();
-          const filteredArticles = articles.filter((article) => {
-            // Check if the article URL is already in the Set
-            if (!uniqueArticles.has(article.url)) {
-              uniqueArticles.add(article.url); // Add the URL to the Set
-              return true; // Keep this article
-            }
-            return false; // Filter out this article
-          });
-
-          // Check for duplicates in the filtered articles
-          const finalArticles = [];
-          const finalUniqueSet = new Set();
-          filteredArticles.forEach((article) => {
-            if (!finalUniqueSet.has(article.url)) {
-              finalUniqueSet.add(article.url);
-              finalArticles.push(article);
-            }
-          });
-
-          this.container.innerHTML = finalArticles
+          // No need for additional filtering here since it's done in fetchNews
+          this.container.innerHTML = articles
             .map((article) => this.createNewsCard(article))
             .join("");
         }
@@ -528,6 +627,8 @@
 
             newsUI.showLoader();
             try {
+              // Only clear cache for the current category
+              newsApi.clearCache(category);
               const news = await newsApi.fetchNews(category);
               newsUI.displayNews(news);
               document.getElementById("currentCategory").textContent =
