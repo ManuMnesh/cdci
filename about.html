@@ -138,9 +138,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link ">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <div class="nav-item dropdown active">
-                <a href="" class="nav-link " data-bs-toggle="dropdown">
+                <a href="" class="nav-link" data-bs-toggle="dropdown">
                   <span class="dropdown-toggle">About Us</span>
                 </a>
                 <div class="dropdown-menu">
@@ -196,50 +196,69 @@
     </div>
     <!-- Navbar & Hero End -->
 
-        <!-- Bootstrap Modal Search -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-fullscreen">
-              <div class="modal-content rounded-0">
-                  <div class="modal-header bg-primary">
-                      <h5 class="modal-title text-white" id="searchModalLabel">
-                          <i class="fas fa-search me-2"></i>Search CDCI Global
-                      </h5>
-                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <!-- Search Input -->
-                      <div class="container">
-                          <div class="input-group mb-4">
-                              <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Type to search...">
-                              <button class="btn btn-primary" type="button" id="searchButton">
-                                  <i class="fas fa-search"></i>
-                              </button>
-                          </div>
-
-                          <!-- Quick Navigation -->
-                          <div class="quick-nav mb-4">
-                              <h6 class="text-primary mb-2">Quick Navigation:</h6>
-                              <div class="d-flex flex-wrap gap-2" id="quickNavButtons">
-                                  <!-- Quick nav buttons will be inserted here -->
-                              </div>
-                          </div>
-
-                          <!-- Search Results -->
-                          <div id="searchResults" class="mt-4" style="display: none;">
-                              <h6 class="text-primary mb-3">Search Results: <span id="resultCount" class="badge bg-primary">0</span></h6>
-                              <div id="resultsList" class="list-group">
-                                  <!-- Results will be inserted here -->
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+    <!-- Bootstrap Modal Search -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title text-white" id="searchModalLabel">
+              <i class="fas fa-search me-2"></i>Search CDCI Global
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="modal-body">
+            <!-- Search Input -->
+            <div class="container">
+              <div class="input-group mb-4">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control form-control-lg"
+                  placeholder="Type to search..."
+                />
+                <button class="btn btn-primary" type="button" id="searchButton">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+
+              <!-- Quick Navigation -->
+              <div class="quick-nav mb-4">
+                <h6 class="text-primary mb-2">Quick Navigation:</h6>
+                <div class="d-flex flex-wrap gap-2" id="quickNavButtons">
+                  <!-- Quick nav buttons will be inserted here -->
+                </div>
+              </div>
+
+              <!-- Search Results -->
+              <div id="searchResults" class="mt-4" style="display: none">
+                <h6 class="text-primary mb-3">
+                  Search Results:
+                  <span id="resultCount" class="badge bg-primary">0</span>
+                </h6>
+                <div id="resultsList" class="list-group">
+                  <!-- Results will be inserted here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
     <!-- Header Start -->
     <div class="container-fluid bg-breadcrumb">
-      <div class="container text-center py-5" style="max-width: 900px">
+      <div class="container text-center py-5" style="max-width: 800px">
         <h4
           class="text-white display-4 mb-4 wow fadeInDown"
           data-wow-delay="0.1s"
@@ -264,52 +283,55 @@
         <div class="row g-5 align-items-center">
           <!-- About Content -->
           <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-5 shadow h-100">
-              <h4 class="text-primary">About CDCI Global Inc.</h4>
-              <h1 class="display-4 mb-4">
-                Your Creative Partner for Positive Global Impact
+            <div class="bg-white rounded p-4 shadow h-100">
+              <h4 class="text-primary mb-3">
+                <i class="fas fa-building me-2"></i>About CDCI Global Inc.
+              </h4>
+              <h1 class="display-5 mb-4">
+                <i class="fas fa-globe-americas me-2"></i>Your Creative Partner
+                for Positive Global Impact
               </h1>
-              <p>
+              <p class="lead mb-4">
                 CDCI Global Inc. (formerly CDC International Consulting, LLC) is
                 a US-based corporation with global outreach. Established in
                 2016, CDCI has successfully executed projects across Africa,
                 specializing in management consulting and technical assistance.
               </p>
-              <p>
-                With 18 years of experience, we have worked with major
-                development agencies, including:
+              <p class="mb-4">
+                <i class="fas fa-history me-2"></i>With 18 years of experience,
+                we have worked with major development agencies, including:
               </p>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i>World Bank
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-university me-2"></i>World Bank
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i>European
-                  Union
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-flag-european me-2"></i>European Union
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i>USAID
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-flag-usa me-2"></i>USAID
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i>African
-                  Development Bank
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-globe-africa me-2"></i>African Development
+                  Bank
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i>TradeMark
-                  East Africa
+                <li class="mb-2">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-handshake me-2"></i>TradeMark East Africa
                 </li>
               </ul>
-              <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="#"
-                >More Information</a
-              >
             </div>
           </div>
 
           <!-- About Image & Statistics -->
           <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-5 shadow h-100">
+            <div class="bg-white rounded p-4 shadow h-100">
               <div class="row g-4">
-                <div class="col-12">
+                <div class="col-12 mb-4">
                   <div class="rounded overflow-hidden">
                     <img
                       src="https://cdci-global.com/wp-content/uploads/2022/07/sectionimg.png"
@@ -319,25 +341,31 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="counter-item text-center bg-light rounded p-3">
+                  <div class="counter-item text-center bg-light rounded p-4">
+                    <i class="fas fa-calendar-alt fa-2x text-primary mb-3"></i>
                     <h2 class="text-primary fw-bold mb-2">18+</h2>
                     <p class="mb-0 text-dark">Years of Experience</p>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="counter-item text-center bg-light rounded p-3">
+                  <div class="counter-item text-center bg-light rounded p-4">
+                    <i class="fas fa-globe-africa fa-2x text-primary mb-3"></i>
                     <h2 class="text-primary fw-bold mb-2">15+</h2>
                     <p class="mb-0 text-dark">African Countries Served</p>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="counter-item text-center bg-light rounded p-3">
+                  <div class="counter-item text-center bg-light rounded p-4">
+                    <i
+                      class="fas fa-project-diagram fa-2x text-primary mb-3"
+                    ></i>
                     <h2 class="text-primary fw-bold mb-2">100+</h2>
                     <p class="mb-0 text-dark">Projects Completed</p>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="counter-item text-center bg-light rounded p-3">
+                  <div class="counter-item text-center bg-light rounded p-4">
+                    <i class="fas fa-users fa-2x text-primary mb-3"></i>
                     <h2 class="text-primary fw-bold mb-2">50+</h2>
                     <p class="mb-0 text-dark">Expert Consultants</p>
                   </div>
@@ -346,9 +374,14 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- About Section End -->
 
-        <!-- Mission & Vision -->
-        <div class="row g-5 align-items-center mt-5">
+    <!-- Mission & Vision -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
             <img
               src="https://cdci-global.com/wp-content/uploads/2022/07/CDCI_consulting.jpg"
@@ -357,49 +390,70 @@
             />
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-5 shadow">
-              <h3 class="text-primary">OUR MISSION & VISION</h3>
-              <p>
-                <strong>Mission:</strong> To solve complex management problems
-                through innovative strategies and solutions.
-              </p>
-              <p>
-                <strong>Vision:</strong> To be a global leader in providing
-                solutions to the world’s complex challenges and developing
-                people to achieve their potential.
-              </p>
+            <div class="bg-white rounded p-4 shadow">
+              <h3 class="text-primary mb-4">
+                <i class="fas fa-bullseye me-2"></i>OUR MISSION & VISION
+              </h3>
+              <div class="mb-4">
+                <h4 class="h5 mb-3">
+                  <i class="fas fa-flag-checkered me-2"></i>Mission:
+                </h4>
+                <p class="mb-0">
+                  To solve complex management problems through innovative
+                  strategies and solutions.
+                </p>
+              </div>
+              <div>
+                <h4 class="h5 mb-3"><i class="fas fa-eye me-2"></i>Vision:</h4>
+                <p class="mb-0">
+                  To be a global leader in providing solutions to the world's
+                  complex challenges and developing people to achieve their
+                  potential.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Core Values -->
-        <div class="row g-5 align-items-center mt-5">
+    <!-- Core Values -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-5 shadow">
-              <h3 class="text-primary">OUR CORE VALUES</h3>
+            <div class="bg-white rounded p-4 shadow">
+              <h3 class="text-primary mb-4">
+                <i class="fas fa-star me-2"></i>OUR CORE VALUES
+              </h3>
               <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i
+                <li class="mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-award me-2"></i
                   ><strong>Excellence:</strong> Excelling in providing practical
                   solutions.
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i
+                <li class="mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-lightbulb me-2"></i
                   ><strong>Innovation:</strong> Developing groundbreaking ideas
                   to meet current and future needs.
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i
+                <li class="mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-handshake me-2"></i
                   ><strong>Commitment:</strong> Dedicated to delivering
                   high-quality solutions to our clients.
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i
+                <li class="mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-shield-alt me-2"></i
                   ><strong>Integrity:</strong> Uncompromising adherence to moral
                   and ethical principles.
                 </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary me-2"></i
+                <li class="mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i
+                  ><i class="fas fa-clipboard-check me-2"></i
                   ><strong>Compliance:</strong> Committed to abiding by all laws
                   and regulations.
                 </li>
@@ -414,23 +468,27 @@
             />
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Value Proposition -->
-        <div class="row g-5 align-items-center mt-5">
+    <!-- Value Proposition -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row g-5">
           <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-5 shadow">
-              <h3 class="text-primary">VALUE PROPOSITION: WHAT WE DO</h3>
+            <div class="bg-white rounded p-4 shadow">
+              <h3 class="text-primary mb-4">VALUE PROPOSITION: WHAT WE DO</h3>
               <ul class="list-unstyled">
-                <li>
+                <li class="mb-3">
                   <i class="fa fa-check-circle text-primary me-2"></i>CDCI makes
                   it easy for clients to find solutions.
                 </li>
-                <li>
+                <li class="mb-3">
                   <i class="fa fa-check-circle text-primary me-2"></i>CDCI
                   differentiates itself by providing customized solutions
                   tailored to individual client needs.
                 </li>
-                <li>
+                <li class="mb-3">
                   <i class="fa fa-check-circle text-primary me-2"></i>CDCI has
                   unique, measurable expertise in solving global challenges in
                   Governance, Agriculture, Water, Sanitation, Health (WASH), and
@@ -442,119 +500,190 @@
         </div>
       </div>
     </div>
-    <!-- About Section End -->
 
-  <!-- Footer Start -->
-<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-  <div class="container py-5">
-      <div class="row g-5">
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <div class="row g-5">
           <div class="col-xl-9">
-              <div class="mb-5">
+            <div class="mb-5">
+              <div class="row g-4">
+                <!-- Company Information -->
+                <div class="col-md-6 col-lg-6 col-xl-5">
+                  <div class="footer-item">
+                    <a href="index.html" class="p-0">
+                      <h3 class="text-white">
+                        <img
+                          src="img/logo.png"
+                          alt="CDCI Logo"
+                          class="img-fluid"
+                          style="max-width: 150px"
+                        />
+                      </h3>
+                    </a>
+                    <h4 class="text-white mt-3">Follow Us</h4>
+                    <div class="footer-btn d-flex">
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
+                        ><i class="fab fa-twitter"></i
+                      ></a>
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a class="btn btn-md-square rounded-circle me-3" href="#"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                      <a class="btn btn-md-square rounded-circle me-0" href="#"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                  <div class="footer-item">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a href="index.html"
+                      ><i class="fas fa-angle-right me-2"></i> Home</a
+                    >
+                    <a href="about.html"
+                      ><i class="fas fa-angle-right me-2"></i> About Us</a
+                    >
+                    <a href="services.html"
+                      ><i class="fas fa-angle-right me-2"></i> Services</a
+                    >
+                    <a href="projects.html"
+                      ><i class="fas fa-angle-right me-2"></i> Projects</a
+                    >
+                    <a href="team.html"
+                      ><i class="fas fa-angle-right me-2"></i> Team</a
+                    >
+                    <a href="news.html"
+                      ><i class="fas fa-angle-right me-2"></i> News</a
+                    >
+                    <a href="contact.html"
+                      ><i class="fas fa-angle-right me-2"></i> Contact Us</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Our Services -->
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                  <div class="footer-item">
+                    <h4 class="text-white mb-4">Our Services</h4>
+                    <a href="services.html#governance"
+                      ><i class="fas fa-angle-right me-2"></i> Governance &
+                      Accountability</a
+                    >
+                    <a href="services.html#agriculture"
+                      ><i class="fas fa-angle-right me-2"></i> Agriculture &
+                      Food Security</a
+                    >
+                    <a href="services.html#wash"
+                      ><i class="fas fa-angle-right me-2"></i> Water, Sanitation
+                      & Health</a
+                    >
+                    <a href="services.html#trade"
+                      ><i class="fas fa-angle-right me-2"></i> Trade &
+                      Logistics</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div
+              class="pt-5"
+              style="border-top: 1px solid rgba(255, 255, 255, 0.08)"
+            >
+              <div class="row g-0">
+                <div class="col-12">
                   <div class="row g-4">
-                      <!-- Company Information -->
-                      <div class="col-md-6 col-lg-6 col-xl-5">
-                          <div class="footer-item">
-                              <a href="index.html" class="p-0">
-                                  <h3 class="text-white">
-                                      <img src="img/logo.png" alt="CDCI Logo" class="img-fluid" style="max-width: 150px;">
-                                  </h3>
-                              </a>
-                              <h4 class="text-white mt-3">Follow Us</h4>
-                              <div class="footer-btn d-flex">
-                                  <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                  <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                  <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                  <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                              </div>
-                          </div>
+                    <div class="col-lg-6 col-xl-4">
+                      <div class="d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">Address</h4>
+                          <p class="mb-0">
+                            CDCI Global, Inc. 25309 Loganshire Terrace, Unit 104
+                            Chantilly, VA 20152
+                          </p>
+                        </div>
                       </div>
-                      
-                      <!-- Quick Links -->
-                      <div class="col-md-6 col-lg-6 col-xl-3">
-                          <div class="footer-item">
-                              <h4 class="text-white mb-4">Quick Links</h4>
-                              <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
-                              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                              <a href="services.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-                              <a href="projects.html"><i class="fas fa-angle-right me-2"></i> Projects</a>
-                              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Team</a>
-                              <a href="news.html"><i class="fas fa-angle-right me-2"></i> News</a>
-                              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
-                          </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                      <div class="d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">Email</h4>
+                          <p class="mb-0">
+                            <a
+                              href="mailto:info@cdciconsulting.com"
+                              class="text-white"
+                              >info@cdciconsulting.com</a
+                            >
+                          </p>
+                        </div>
                       </div>
-
-                      <!-- Our Services -->
-                      <div class="col-md-6 col-lg-6 col-xl-4">
-                          <div class="footer-item">
-                              <h4 class="text-white mb-4">Our Services</h4>
-                              <a href="services.html#governance"><i class="fas fa-angle-right me-2"></i> Governance & Accountability</a>
-                              <a href="services.html#agriculture"><i class="fas fa-angle-right me-2"></i> Agriculture & Food Security</a>
-                              <a href="services.html#wash"><i class="fas fa-angle-right me-2"></i> Water, Sanitation & Health</a>
-                              <a href="services.html#trade"><i class="fas fa-angle-right me-2"></i> Trade & Logistics</a>
-                          </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                      <div class="d-flex">
+                        <div
+                          class="btn-xl-square bg-primary text-white rounded p-4 me-4"
+                        >
+                          <i class="fa fa-phone-alt fa-2x"></i>
+                        </div>
+                        <div>
+                          <h4 class="text-white">Telephone</h4>
+                          <p class="mb-0">
+                            <a href="tel:8584052827" class="text-white"
+                              >858-405-2827</a
+                            >
+                          </p>
+                        </div>
                       </div>
+                    </div>
                   </div>
+                </div>
               </div>
-
-              <!-- Contact Details -->
-              <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                  <div class="row g-0">
-                      <div class="col-12">
-                          <div class="row g-4">
-                              <div class="col-lg-6 col-xl-4">
-                                  <div class="d-flex">
-                                      <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                          <i class="fas fa-map-marker-alt fa-2x"></i>
-                                      </div>
-                                      <div>
-                                          <h4 class="text-white">Address</h4>
-                                          <p class="mb-0">CDCI Global, Inc. 25309 Loganshire Terrace, Unit 104 Chantilly, VA 20152</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6 col-xl-4">
-                                  <div class="d-flex">
-                                      <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                          <i class="fas fa-envelope fa-2x"></i>
-                                      </div>
-                                      <div>
-                                          <h4 class="text-white">Email</h4>
-                                          <p class="mb-0"><a href="mailto:info@cdciconsulting.com" class="text-white">info@cdciconsulting.com</a></p>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6 col-xl-4">
-                                  <div class="d-flex">
-                                      <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                          <i class="fa fa-phone-alt fa-2x"></i>
-                                      </div>
-                                      <div>
-                                          <h4 class="text-white">Telephone</h4>
-                                          <p class="mb-0"><a href="tel:8584052827" class="text-white">858-405-2827</a></p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
 
           <!-- Newsletter Subscription -->
           <div class="col-xl-3">
-              <div class="footer-item">
-                  <h4 class="text-white mb-4">Newsletter</h4>
-                  <p class="text-white mb-3">Subscribe to get updates on our latest projects and insights.</p>
-                  <div class="position-relative rounded-pill mb-4">
-                      <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="email" placeholder="Enter your email">
-                      <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">Sign Up</button>
-                  </div>
+            <div class="footer-item">
+              <h4 class="text-white mb-4">Newsletter</h4>
+              <p class="text-white mb-3">
+                Subscribe to get updates on our latest projects and insights.
+              </p>
+              <div class="position-relative rounded-pill mb-4">
+                <input
+                  class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+                >
+                  Sign Up
+                </button>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</div>
-<!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
@@ -594,6 +723,5 @@
 
     <!-- Search Javascript -->
     <script src="js/search.js"></script>
-
   </body>
 </html>
