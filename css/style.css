@@ -1921,3 +1921,65 @@ inp:focus {
   margin: 2rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/*** Project Cards Start ***/
+.service-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-item h4 {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  line-height: 1.4;
+  height: 3.1em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.service-item p {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  height: 4.8em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.service-item .btn {
+  margin-top: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .service-item img {
+    height: 200px;
+  }
+
+  .service-item h4 {
+    font-size: 1rem;
+    height: 2.8em;
+  }
+
+  .service-item p {
+    height: 4.2em;
+  }
+}
+/*** Project Cards End ***/

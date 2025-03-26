@@ -104,7 +104,7 @@ const projectsData = {
   },
   "transport-planning": {
     title: "Nairobi - Budgeting & Transport Planning Support",
-    image: "https://images.pexels.com/photos/2253573/pexels-photo-2253573.jpeg",
+    image: "img/Nairobi - Budgeting & Transport Planning Support.jpg",
     category: "Governance and Accountability",
     description: `
         <div class="project-details">
