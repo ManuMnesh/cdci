@@ -666,7 +666,7 @@ const projectsData = {
   "water-services": {
     title:
       "Mombasa, Kenya - Business Strategy & Financial Management for Six WSPs",
-    image: "https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg",
+    image: "img/Mombasa, Kenya - Business Strategy & Financial Management for Six WSPs.jpg",
     category: "Water, Sanitation, and Health (WASH)",
     description: `
         <div class="project-details">
@@ -828,7 +828,7 @@ const projectsData = {
   "rural-water": {
     title:
       "Nairobi, Kenya - Feasibility Study for Nairobi Sanitation OBA Project",
-    image: "https://images.pexels.com/photos/3310691/pexels-photo-3310691.jpeg",
+    image: "img/Nairobi, Kenya - Feasibility Study for Nairobi Sanitation OBA Project.jpg",
     category: "Water, Sanitation, and Health (WASH)",
     description: `
         <div class="project-details">
@@ -1002,7 +1002,7 @@ const projectsData = {
   },
   "water-market-assessment": {
     title: "Kenya - Market Assessment of the Safe Water Market",
-    image: "https://images.pexels.com/photos/1578248/pexels-photo-1578248.jpeg",
+    image: "img/Kenya - Market Assessment of the Safe Water Market.jpg",
     category: "Water, Sanitation, and Health (WASH)",
     description: `
         <div class="project-details">
@@ -1615,7 +1615,7 @@ const projectsData = {
   },
   "bus-rapid-transport": {
     title: "Kenya - Bus Rapid Transport (BRT) Transaction Advisory",
-    image: "https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg",
+    image: "img/Kenya - Bus Rapid Transport (BRT) Transaction Advisory.jpg",
     category: "Other Sectors",
     description: `
         <div class="project-details">
