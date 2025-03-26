@@ -1,0 +1,52 @@
+/* Team Card Styles */
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-img {
+  position: relative;
+  overflow: hidden;
+  height: 250px; /* Fixed height for uniformity */
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the entire image is visible */
+  transition: transform 0.3s ease;
+}
+
+.team-content {
+  padding: 20px;
+}
+
+.position-tag {
+  display: inline-block;
+  background: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.team-content h4 {
+  margin: 10px 0;
+}
+
+.team-content p {
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .team-img {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
