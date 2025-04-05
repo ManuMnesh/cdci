@@ -36,9 +36,9 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
                     <!-- Editable Hero Title -->
-                    <h1 class="mb-4" data-editable="text" id="hero-title">Nesh Devv BBBB&nbsp;</h1>
+                    <h1 class="mb-4" data-editable="text" id="hero-title">Welcome to Our Modern Website Crazy Things</h1>
                     <!-- Editable Hero Description -->
-                    <p class="lead" data-editable="text" id="hero-description">We create amazing digital experiences that help businesses grow and succeed in the modern world. Wachsaaa</p>
+                    <p class="lead" data-editable="text" id="hero-description">We create amazing digital experiences that help businesses grow and succeed in the modern world. Great</p>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                 <div class="feature-box">
                     <!-- Editable Feature Image -->
                     <div class="text-center mb-4">
-                        <img src="../uploads/67f17c88de4c0.jpeg" class="img-fluid" data-editable="image" id="feature1-image" alt="Feature 1">
+                        <img src="../uploads/67f175301d6be.jpg" class="img-fluid" data-editable="image" id="feature1-image" alt="Feature 1">
                     </div>
                     <!-- Editable Feature Title -->
                     <h3 class="text-center mb-3" data-editable="text" id="feature1-title">Innovation</h3>
@@ -65,7 +65,7 @@
                 <div class="feature-box">
                     <!-- Editable Feature Image -->
                     <div class="text-center mb-4">
-                        <img src="./uploads/67f1778d0d2ef.jpg" class="img-fluid" data-editable="image" id="feature2-image" alt="Feature 2">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" data-editable="image" id="feature2-image" alt="Feature 2">
                     </div>
                     <!-- Editable Feature Title -->
                     <h3 class="text-center mb-3" data-editable="text" id="feature2-title">Expertise</h3>
@@ -78,7 +78,7 @@
                 <div class="feature-box">
                     <!-- Editable Feature Image -->
                     <div class="text-center mb-4">
-                        <img src="../uploads/67f1793523b8b.jpg" class="img-fluid" data-editable="image" id="feature3-image" alt="Feature 3">
+                        <img src="https://via.placeholder.com/150" class="img-fluid" data-editable="image" id="feature3-image" alt="Feature 3">
                     </div>
                     <!-- Editable Feature Title -->
                     <h3 class="text-center mb-3" data-editable="text" id="feature3-title">Support</h3>
@@ -111,7 +111,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <!-- Editable Footer Text -->
-                    <p data-editable="text" id="footer-text">&Atilde;&#131;&Acirc;&#130;&Atilde;&#130;&Acirc;&copy; 2025 Your Company. All rights reserved.</p>
+                    <p data-editable="text" id="footer-text">&Acirc;&copy; 2025 Your Company. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-end">
                     <!-- Editable Footer Links -->

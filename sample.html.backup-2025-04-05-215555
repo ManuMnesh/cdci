@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-md-8 offset-md-2 text-center">
                     <!-- Editable Hero Title -->
-                    <h1 class="mb-4" data-editable="text" id="hero-title">Nesh Devv BBBB&nbsp;</h1>
+                    <h1 class="mb-4" data-editable="text" id="hero-title">Nesh Devv BBBB gggg</h1>
                     <!-- Editable Hero Description -->
                     <p class="lead" data-editable="text" id="hero-description">We create amazing digital experiences that help businesses grow and succeed in the modern world. Wachsaaa</p>
                 </div>

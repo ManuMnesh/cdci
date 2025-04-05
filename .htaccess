@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Don't apply rules to existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Don't apply rules to admin directory
+RewriteCond %{REQUEST_URI} !^/cdci/admin/
+
+# Redirect .html requests to index.php
+RewriteRule ^(.+)\.html$ index.php?page=$1.html [L,QSA]
+
+# Allow direct access to PHP files
+RewriteCond %{REQUEST_FILENAME} !\.php$
+RewriteRule ^.*$ index.php?page=sample.html [L,QSA]

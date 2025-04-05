@@ -88,13 +88,36 @@ class Page {
     }
 
     public function updateContentBlock($block_id, $content) {
-        $query = "UPDATE content_blocks SET content = :content WHERE id = :id";
-        $stmt = $this->conn->prepare($query);
-        
-        $stmt->bindParam(":content", $content);
-        $stmt->bindParam(":id", $block_id);
+        try {
+            $query = "UPDATE content_blocks SET content = :content WHERE id = :id";
+            $stmt = $this->conn->prepare($query);
+            
+            $stmt->bindParam(":content", $content);
+            $stmt->bindParam(":id", $block_id);
 
-        return $stmt->execute();
+            $result = $stmt->execute();
+            
+            if ($result) {
+                // Get the page ID for this block
+                $query = "SELECT page_id FROM content_blocks WHERE id = :id";
+                $stmt = $this->conn->prepare($query);
+                $stmt->bindParam(":id", $block_id);
+                $stmt->execute();
+                
+                if ($page_id = $stmt->fetchColumn()) {
+                    // Update the page's last_modified timestamp
+                    $query = "UPDATE pages SET last_modified = CURRENT_TIMESTAMP WHERE id = :id";
+                    $stmt = $this->conn->prepare($query);
+                    $stmt->bindParam(":id", $page_id);
+                    $stmt->execute();
+                }
+            }
+            
+            return $result;
+        } catch (PDOException $e) {
+            error_log("Error updating content block: " . $e->getMessage());
+            return false;
+        }
     }
 
     public function scanAndCreateBlocks($page_id, $html_content) {
@@ -124,7 +147,7 @@ class Page {
             // Insert or update content block
             $query = "INSERT INTO content_blocks (page_id, selector, content, type) 
                      VALUES (:page_id, :selector, :content, :type)
-                     ON DUPLICATE KEY UPDATE content = :content";
+                     ON DUPLICATE KEY UPDATE content = VALUES(content)";
             
             $stmt = $this->conn->prepare($query);
             $stmt->execute([
@@ -139,25 +162,60 @@ class Page {
     }
 
     public function applyContentBlocks($html_content, $blocks) {
+        if (empty($blocks)) {
+            return $html_content;
+        }
+
         libxml_use_internal_errors(true);
         $dom = new DOMDocument();
         $dom->loadHTML($html_content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        $xpath = new DOMXPath($dom);
         
         foreach ($blocks as $block) {
-            $xpath = new DOMXPath($dom);
             $element = $xpath->query("//*[@id='{$block['selector']}']")->item(0);
             
             if ($element) {
                 if ($block['type'] === 'image') {
-                    $element->setAttribute('src', $block['content']);
+                    if ($element->tagName === 'img') {
+                        $element->setAttribute('src', $block['content']);
+                    }
                 } else {
-                    $element->textContent = $block['content'];
+                    // For text content, we need to handle HTML content properly
+                    if ($block['content']) {
+                        // Create a temporary document for the content
+                        $temp = new DOMDocument();
+                        @$temp->loadHTML('<div>' . $block['content'] . '</div>', LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+                        
+                        // Clear existing content
+                        while ($element->hasChildNodes()) {
+                            $element->removeChild($element->firstChild);
+                        }
+                        
+                        // Import and append new content
+                        foreach ($temp->getElementsByTagName('div')->item(0)->childNodes as $node) {
+                            $imported = $dom->importNode($node, true);
+                            $element->appendChild($imported);
+                        }
+                    }
                 }
             }
         }
         
+        // Clean up the output
         $html = $dom->saveHTML();
         libxml_clear_errors();
+        
+        // Remove DOCTYPE and HTML/BODY tags if they were added
+        $html = preg_replace(
+            [
+                '/^<!DOCTYPE.*?>\n/',
+                '/<html><body>/',
+                '/<\/body><\/html>/'
+            ],
+            '',
+            $html
+        );
+        
         return $html;
     }
 }

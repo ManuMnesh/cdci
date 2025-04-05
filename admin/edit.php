@@ -130,6 +130,11 @@ if (!$page_data) {
                 formData.append('image', file);
                 formData.append('block_id', block.data('block-id'));
 
+                // Show loading state
+                const imgElement = block.find('img');
+                const originalSrc = imgElement.attr('src');
+                imgElement.css('opacity', '0.5');
+
                 $.ajax({
                     url: 'api/upload.php',
                     type: 'POST',
@@ -138,55 +143,95 @@ if (!$page_data) {
                     contentType: false,
                     success: function(response) {
                         if (response.success) {
+                            // Update the image preview only
+                            imgElement.attr('src', response.url);
                             block.find('.content-editor[data-type="image"]').val(response.url);
-                            block.find('img').attr('src', response.url);
+                            imgElement.css('opacity', '1');
                         } else {
                             alert('Error uploading image: ' + response.message);
+                            imgElement.attr('src', originalSrc);
+                            imgElement.css('opacity', '1');
                         }
                     },
                     error: function(xhr) {
+                        alert('Error uploading image. Please try again.');
+                        imgElement.attr('src', originalSrc);
+                        imgElement.css('opacity', '1');
                         if (xhr.status === 401) {
                             window.location.href = 'login.php';
-                        } else {
-                            alert('Error uploading image. Please try again.');
                         }
                     }
                 });
             });
 
-            // Handle saving changes
+            // Save changes when clicking save button
             $('#save-changes').click(function() {
-                const updates = [];
-                $('.content-block').each(function() {
-                    const blockId = $(this).data('block-id');
-                    const content = $(this).find('.content-editor').val();
-                    updates.push({ id: blockId, content: content });
+                const savePromises = [];
+                
+                // Show loading message
+                const $saveBtn = $('#save-changes');
+                const originalText = $saveBtn.text();
+                $saveBtn.text('Saving changes...').prop('disabled', true);
+                
+                // Save text content
+                $('.content-editor[data-type="text"]').each(function() {
+                    const block = $(this).closest('.content-block');
+                    const blockId = block.data('block-id');
+                    const content = $(this).val();
+                    
+                    const promise = $.ajax({
+                        url: 'api/save_content.php',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({
+                            blockId: blockId,
+                            content: content
+                        })
+                    });
+                    
+                    savePromises.push(promise);
                 });
-
-                $.ajax({
-                    url: 'api/pages.php',
-                    type: 'POST',
-                    data: {
-                        action: 'update_blocks',
-                        page_id: <?php echo $page_data['id']; ?>,
-                        updates: JSON.stringify(updates)
-                    },
-                    success: function(response) {
-                        if (response.success) {
-                            alert('Changes saved successfully!');
-                            $('.preview-frame')[0].contentWindow.location.reload();
-                        } else {
-                            alert('Error saving changes: ' + response.message);
-                        }
-                    },
-                    error: function(xhr) {
-                        if (xhr.status === 401) {
-                            window.location.href = 'login.php';
-                        } else {
-                            alert('Error saving changes. Please try again.');
-                        }
+                
+                // Save image content
+                $('.content-editor[data-type="image"]').each(function() {
+                    const block = $(this).closest('.content-block');
+                    const blockId = block.data('block-id');
+                    const content = $(this).val();
+                    
+                    if (content) {
+                        const promise = $.ajax({
+                            url: 'api/save_content.php',
+                            type: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                blockId: blockId,
+                                content: content
+                            })
+                        });
+                        
+                        savePromises.push(promise);
                     }
                 });
+                
+                // Wait for all saves to complete
+                Promise.all(savePromises)
+                    .then(function() {
+                        alert('Changes saved! The page will update in a few moments.');
+                        // Reload the preview after a short delay to allow changes to be processed
+                        setTimeout(function() {
+                            $('.preview-frame')[0].contentWindow.location.reload();
+                        }, 1500);
+                    })
+                    .catch(function(error) {
+                        if (error.status === 401) {
+                            window.location.href = 'login.php';
+                        }
+                    })
+                    .finally(function() {
+                        setTimeout(function() {
+                            $saveBtn.text(originalText).prop('disabled', false);
+                        }, 1000);
+                    });
             });
         });
     </script>

@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CDCI Global, Inc</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <div class="border-end border-primary pe-3">
+                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Location : CDCI Global, Inc. 25309 Loganshire Terrace, Unit 104 Chantilly, VA 20152</a>
+                            </div>
+                            <div class="ps-3">
+                                <a href="mailto:info@cdciconsulting.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>info@cdciconsulting.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex border-end border-primary pe-3">
+                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="dropdown ms-3">
+                                <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="#" class="dropdown-item">English</a>
+                                    <a href="#" class="dropdown-item">Bangla</a>
+                                    <a href="#" class="dropdown-item">French</a>
+                                    <a href="#" class="dropdown-item">Spanish</a>
+                                    <a href="#" class="dropdown-item">Arabic</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light"> 
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h1 class="text-primary mb-0" data-editable="text" id="main-logo"><i class="fas fa-globe me-2"></i> CDCI Global</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link active" data-editable="text" id="nav-home">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-editable="text" id="nav-about">About Us</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="about.html" class="dropdown-item" data-editable="text" id="nav-about-company">About Company</a>
+                                    <a href="team.html" class="dropdown-item" data-editable="text" id="nav-team">Our Team</a>
+                                    <a href="commitment-to-quality.html" class="dropdown-item" data-editable="text" id="nav-quality">Commitment to Quality</a>
+                                </div>
+                            </div>
+                            <a href="services.html" class="nav-item nav-link" data-editable="text" id="nav-services">Services</a>
+                            <a href="projects.html" class="nav-item nav-link" data-editable="text" id="nav-projects">Projects</a>
+                            <a href="news.html" class="nav-item nav-link" data-editable="text" id="nav-news">News</a>
+                            <a href="contact.html" class="nav-item nav-link" data-editable="text" id="nav-contact">Contact</a>
+                            <div class="nav-btn px-3">
+                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0" data-editable="text" id="nav-cta">Work with Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                        <div class="d-flex align-items-center justify-content-center me-4">
+                            <span data-editable="text" id="call-text">Call to Our Experts</span>
+                            <a href="tel:+ 0123 456 7890"><span class="text-dark" data-editable="text" id="phone-number">Free: + 0123 456 7890</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Hero Start -->
+        <div class="container-fluid hero-header px-0 px-lg-4 py-5 bg-light">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="mb-4" data-editable="text" id="hero-title">Empowering Sustainable Development Through Innovation</h1>
+                        <p class="mb-4" data-editable="text" id="hero-description">CDCI Global is a leading consulting firm specializing in International Development, Agriculture, Trade & Investment, and Water, Sanitation & Hygiene (WASH) sectors.</p>
+                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5" data-editable="text" id="hero-cta">Discover More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="img/hero-1.jpg" class="img-fluid" data-editable="image" id="hero-image" alt="Hero Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="h-100">
+                            <img src="img/about-1.jpg" class="img-fluid" data-editable="image" id="about-image-1" alt="About Image">
+                            <div class="btn btn-primary rounded-pill border-0 py-3 px-5 position-absolute" style="right: -50px; bottom: 0px;" data-editable="text" id="about-years">15+ Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h5 class="text-primary mb-3" data-editable="text" id="about-subtitle">About Us</h5>
+                        <h1 class="mb-4" data-editable="text" id="about-title">Driving Positive Change Through Expert Consulting</h1>
+                        <p class="mb-4" data-editable="text" id="about-description">At CDCI Global, we are committed to delivering innovative solutions that drive sustainable development across multiple sectors. Our team of experts brings together years of experience and deep industry knowledge.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check bg-light text-primary rounded-circle p-3 me-3"></i>
+                                    <h6 class="mb-0" data-editable="text" id="about-point-1">Expert Consulting Services</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check bg-light text-primary rounded-circle p-3 me-3"></i>
+                                    <h6 class="mb-0" data-editable="text" id="about-point-2">Global Project Experience</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check bg-light text-primary rounded-circle p-3 me-3"></i>
+                                    <h6 class="mb-0" data-editable="text" id="about-point-3">Sustainable Solutions</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-check bg-light text-primary rounded-circle p-3 me-3"></i>
+                                    <h6 class="mb-0" data-editable="text" id="about-point-4">Innovative Approaches</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5" data-editable="text" id="about-cta">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Visionbar Start -->
+        <div class="container-fluid vision-container section-spacing">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="vision-img">
+                            <img class="img-fluid" data-editable="image" id="vision-image" src="img/vision.jpg" alt="Vision">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="vision-text">
+                            <h5 class="text-primary mb-3" data-editable="text" id="vision-subtitle">Our Vision</h5>
+                            <h1 class="mb-4" data-editable="text" id="vision-title">Building a Better Future Through Sustainable Development</h1>
+                            <p class="mb-4" data-editable="text" id="vision-description">We envision a world where sustainable development practices create lasting positive impact across communities.</p>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="vision-item">
+                                        <div class="vision-content">
+                                            <h4 data-editable="text" id="vision-point-1-title">Strategic Growth</h4>
+                                            <p data-editable="text" id="vision-point-1-desc">Implementing strategic solutions for sustainable growth and development.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="vision-item">
+                                        <div class="vision-content">
+                                            <h4 data-editable="text" id="vision-point-2-title">Global Partnership</h4>
+                                            <p data-editable="text" id="vision-point-2-desc">Building strong partnerships for effective project implementation.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Visionbar End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid services py-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                    <h5 class="text-primary text-uppercase" data-editable="text" id="services-subtitle">Our Services</h5>
+                    <h1 class="mb-0" data-editable="text" id="services-title">What We Offer</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <img class="img-fluid" data-editable="image" id="service-1-image" src="img/service-1.jpg" alt="Service 1">
+                            <div class="service-content">
+                                <h4 class="mb-3" data-editable="text" id="service-1-title">International Development</h4>
+                                <p class="mb-4" data-editable="text" id="service-1-desc">Supporting sustainable development through expert consulting and project management.</p>
+                                <a href="services.html" class="btn btn-primary px-4 py-2 rounded-pill" data-editable="text" id="service-1-cta">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <img class="img-fluid" data-editable="image" id="service-2-image" src="img/service-2.jpg" alt="Service 2">
+                            <div class="service-content">
+                                <h4 class="mb-3" data-editable="text" id="service-2-title">Agriculture & Food Security</h4>
+                                <p class="mb-4" data-editable="text" id="service-2-desc">Improving agricultural practices and ensuring food security across regions.</p>
+                                <a href="services.html" class="btn btn-primary px-4 py-2 rounded-pill" data-editable="text" id="service-2-cta">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-item">
+                            <img class="img-fluid" data-editable="image" id="service-3-image" src="img/service-3.jpg" alt="Service 3">
+                            <div class="service-content">
+                                <h4 class="mb-3" data-editable="text" id="service-3-title">WASH Programs</h4>
+                                <p class="mb-4" data-editable="text" id="service-3-desc">Implementing water, sanitation, and hygiene programs for communities.</p>
+                                <a href="services.html" class="btn btn-primary px-4 py-2 rounded-pill" data-editable="text" id="service-3-cta">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <marquee behavior="scroll" direction="left" class="text-white fw-bold fs-5">
+                                 CDCI Vision is realised through delivery of Services in the areas of Governance and Accountability, Agriculture and Food Security, Water, Sanitation and Health (WASH) and Trade and Logistics.
+                             </marquee>
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-start">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Governance and Accountability</h1>
+                                        <p class="mb-5 fs-5">CDCI understands the extensiveness of the Governance and Accountability sector as it cuts across both the public and private sectors.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 animated fadeInRight">
+                                    <div class="carousel-img">
+                                        <img src="img/african-business-male-people-shaking-hands.jpg" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <marquee behavior="scroll" direction="left" class="text-white fw-bold fs-5">
+                                CDCI Vision is realised through delivery of Services in the areas of Governance and Accountability, Agriculture and Food Security, Water, Sanitation and Health (WASH) and Trade and Logistics.
+                             </marquee>
+                            <div class="row gy-4 align-items-center">
+                                <div class="col-lg-5 animated fadeInLeft">
+                                    <div class="carousel-img">
+                                        <img src="img/water and sanitation.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 animated fadeInRight">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Water, Sanitation and Health (WASH)</h1>
+                                        <p class="mb-5 fs-5">Development and implementation of community-based WASH management models – this entails feasibility studies and the development of appropriate management models.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <marquee behavior="scroll" direction="left" class="text-white fw-bold fs-5">
+                               CDCI Vision is realised through delivery of Services in the areas of Governance and Accountability, Agriculture and Food Security, Water, Sanitation and Health (WASH) and Trade and Logistics.
+                             </marquee>
+                            <div class="row g-4 align-items-center">
+                                <div class="col-lg-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-start">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Trade and Logistics</h1>
+                                        <p class="mb-5 fs-5">CDCI understands the extensiveness of the Governance and Accountability sector as it cuts across both the public and private sectors.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 animated fadeInRight">
+                                    <div class="carousel-img">
+                                        <img src="img/trade-logistics.jpg" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-carousel-item bg-primary searchable">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <marquee behavior="scroll" direction="left" class="text-white fw-bold fs-5">
+                                CDCI Vision is realised through delivery of Services in the areas of Governance and Accountability, Agriculture and Food Security, Water, Sanitation and Health (WASH) and Trade and Logistics.
+                             </marquee>
+                            <div class="row gy-4 align-items-center">
+                                <div class="col-lg-5 animated fadeInLeft">
+                                    <div class="carousel-img">
+                                        <img src="img/agriculture.jpg" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 animated fadeInRight">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-white text-uppercase fw-bold mb-4">Welcome To CDCI Global</h4>
+                                        <h1 class="display-1 text-white mb-4">Agriculture and Food Security</h1>
+                                        <p class="mb-5 fs-5">Food security worldwide is increasingly causing concern more so in developing countries with the most vulnerable being the smallholder farmers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Feature Start -->
+        <div class="container-fluid feature bg-light section-spacing">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Features</h4>
+                    <h1 class="display-4 mb-4">We are CDCI Global, Inc.</h1>
+                    <p class="mb-0">We exist to serve our fellow human beings globally with solutions, strategies, and systems designed to uncover and unleash their potential.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-gavel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4" data-editable="text" id="governance-feature">Governance and Accountability</h4>
+                            <p class="mb-4" data-editable="text" id="governance-feature-description">We provide expert consulting services in governance and accountability, helping organizations improve their decision-making processes and ensure transparency and accountability.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="services.html#governance">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-seedling fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4" data-editable="text" id="agriculture-feature">Agriculture and Food Security</h4>
+                            <p class="mb-4" data-editable="text" id="agriculture-feature-description">Our team of experts provides innovative solutions to improve agricultural practices and ensure food security across regions.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="services.html#agriculture">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-faucet fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4" data-editable="text" id="wash-feature">Water, Sanitation and Health (WASH)</h4>
+                            <p class="mb-4" data-editable="text" id="wash-feature-description">We implement water, sanitation, and hygiene programs for communities, promoting healthy living conditions and improving public health.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="services.html#wash">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-truck fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4" data-editable="text" id="trade-feature">Trade and Logistics</h4>
+                            <p class="mb-4" data-editable="text" id="trade-feature-description">Our experts provide strategic solutions for trade and logistics, helping organizations navigate complex global markets and improve their supply chain management.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="services.html#trade">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid bg-light about-section section-spacing">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item-content bg-white rounded p-5 h-100">
+                            <h4 class="text-primary mb-3" data-editable="text" id="about-subtitle">About Our Company</h4>
+                            <h1 class="display-5 mb-4" data-editable="text" id="about-title">CDCI Global</h1>
+                            <p class="lead mb-4" data-editable="text" id="about-description">Specializes in providing Management consulting and technical assistance services.</p>
+                            <div class="key-points">
+                                <div class="point-item mb-3">
+                                    <p class="text-dark d-flex align-items-start">
+                                        <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                        <span data-editable="text" id="about-point-1">CDCI makes it easy for clients to find solutions through our comprehensive consulting approach.</span>
+                                    </p>
+                                </div>
+                                <div class="point-item mb-3">
+                                    <p class="text-dark d-flex align-items-start">
+                                        <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                        <span data-editable="text" id="about-point-2">CDCI differentiates from its competitors by providing customized solutions to individual client's needs.</span>
+                                    </p>
+                                </div>
+                                <div class="point-item mb-4">
+                                    <p class="text-dark d-flex align-items-start">
+                                        <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                        <span data-editable="text" id="about-point-3">CDCI has unique, measurable expertise/experience in global challenges, particularly in:</span>
+                                    </p>
+                                    <ul class="list-unstyled ms-4 ps-3">
+                                        <li class="mb-2"><i class="fas fa-angle-right text-primary me-2"></i>Governance and Accountability</li>
+                                        <li class="mb-2"><i class="fas fa-angle-right text-primary me-2"></i>Agriculture and Food Security</li>
+                                        <li class="mb-2"><i class="fas fa-angle-right text-primary me-2"></i>Water, Sanitation and Health (WASH)</li>
+                                        <li class="mb-2"><i class="fas fa-angle-right text-primary me-2"></i>Trade and Logistics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5" data-editable="text" id="about-cta">More Information</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-white rounded p-5 h-100">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div class="rounded bg-light">
+                                        <img src="img/about-1.png" class="img-fluid rounded w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">18</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark" data-editable="text" id="about-years">Years of experience</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">15</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark" data-editable="text" id="about-countries">Countries Served</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark" data-editable="text" id="about-projects">Projects completed</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">50</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark" data-editable="text" id="about-experts">Expert Consultants</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Core Values Start -->
+        <div class="container-fluid service section-spacing">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Values</h4>
+                    <h1 class="display-4 mb-4">Our Core Values</h1>
+                    <p class="mb-0">At CDCI Global Inc., we are guided by a strong set of values that define our work and commitment to clients. These values drive our mission and shape our impact worldwide.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- Excellence -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-1.png" class="img-fluid rounded-top w-100" alt="Excellence">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-star fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <h4 class="mb-4" data-editable="text" id="excellence-title">Excellence</h4>
+                                    <p class="mb-4" data-editable="text" id="excellence-description">We strive to excel in providing practical, high-quality solutions that create lasting impact.</p>
+                                    <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#excellenceModal">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Commitment -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-2.png" class="img-fluid rounded-top w-100" alt="Commitment">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-handshake fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <h4 class="mb-4" data-editable="text" id="commitment-title">Commitment</h4>
+                                    <p class="mb-4" data-editable="text" id="commitment-description">We are dedicated to delivering high-quality solutions that meet the needs of our clients and partners.</p>
+                                    <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#commitmentModal">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integrity -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-3.png" class="img-fluid rounded-top w-100" alt="Integrity">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-balance-scale fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <h4 class="mb-4" data-editable="text" id="integrity-title">Integrity</h4>
+                                    <p class="mb-4" data-editable="text" id="integrity-description">We uphold the highest moral and ethical standards in all our engagements.</p>
+                                    <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#integrityModal">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Compliance -->
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/blog-4.png" class="img-fluid rounded-top w-100" alt="Compliance">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-check-circle fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <h4 class="mb-4" data-editable="text" id="compliance-title">Compliance</h4>
+                                    <p class="mb-4" data-editable="text" id="compliance-description">We are committed to adhering to all laws, regulations, and industry best practices.</p>
+                                    <button class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#complianceModal">
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Core Values End -->
+
+        <!-- Core Values Modals -->
+        <!-- Excellence Modal -->
+        <div class="modal fade" id="excellenceModal" tabindex="-1" aria-labelledby="excellenceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="excellenceModalLabel" data-editable="text" id="excellence-modal-title">Excellence</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/blog-1.png" class="img-fluid rounded" alt="Excellence">
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="text-primary mb-4" data-editable="text" id="excellence-modal-subtitle">Our Commitment to Excellence</h4>
+                                <p data-editable="text" id="excellence-modal-description">At CDCI Global, excellence is not just a goal—it's our standard. We demonstrate this through:</p>
+                                <ul>
+                                    <li data-editable="text" id="excellence-modal-point-1">Delivering superior quality solutions that exceed client expectations</li>
+                                    <li data-editable="text" id="excellence-modal-point-2">Continuous improvement and innovation in our methodologies</li>
+                                    <li data-editable="text" id="excellence-modal-point-3">Rigorous quality control processes</li>
+                                    <li data-editable="text" id="excellence-modal-point-4">Investment in professional development</li>
+                                    <li data-editable="text" id="excellence-modal-point-5">Regular performance monitoring and evaluation</li>
+                                </ul>
+                                <p data-editable="text" id="excellence-modal-impact">We measure our success by the tangible impact we create and the sustainable solutions we deliver to our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Commitment Modal -->
+        <div class="modal fade" id="commitmentModal" tabindex="-1" aria-labelledby="commitmentModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="commitmentModalLabel" data-editable="text" id="commitment-modal-title">Commitment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/blog-2.png" class="img-fluid rounded" alt="Commitment">
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="text-primary mb-4" data-editable="text" id="commitment-modal-subtitle">Our Dedication to Service</h4>
+                                <p data-editable="text" id="commitment-modal-description">Our commitment manifests through:</p>
+                                <ul>
+                                    <li data-editable="text" id="commitment-modal-point-1">Long-term partnerships with clients and stakeholders</li>
+                                    <li data-editable="text" id="commitment-modal-point-2">Dedicated project teams that see initiatives through to completion</li>
+                                    <li data-editable="text" id="commitment-modal-point-3">Sustainable solutions that continue to deliver value</li>
+                                    <li data-editable="text" id="commitment-modal-point-4">Responsive support and follow-through</li>
+                                    <li data-editable="text" id="commitment-modal-point-5">Investment in local capacity building</li>
+                                </ul>
+                                <p data-editable="text" id="commitment-modal-success">We stand by our work and remain committed to our clients' success long after project completion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integrity Modal -->
+        <div class="modal fade" id="integrityModal" tabindex="-1" aria-labelledby="integrityModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="integrityModalLabel" data-editable="text" id="integrity-modal-title">Integrity</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/blog-3.png" class="img-fluid rounded" alt="Integrity">
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="text-primary mb-4" data-editable="text" id="integrity-modal-subtitle">Our Foundation of Integrity</h4>
+                                <p data-editable="text" id="integrity-modal-description">Integrity is the cornerstone of our operations, demonstrated through:</p>
+                                <ul>
+                                    <li data-editable="text" id="integrity-modal-point-1">Transparent business practices and communication</li>
+                                    <li data-editable="text" id="integrity-modal-point-2">Ethical decision-making at all levels</li>
+                                    <li data-editable="text" id="integrity-modal-point-3">Honest and accurate reporting</li>
+                                    <li data-editable="text" id="integrity-modal-point-4">Protection of client confidentiality</li>
+                                    <li data-editable="text" id="integrity-modal-point-5">Fair and equitable treatment of all stakeholders</li>
+                                </ul>
+                                <p data-editable="text" id="integrity-modal-belief">We believe that maintaining the highest standards of integrity is essential for building lasting relationships and achieving sustainable results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compliance Modal -->
+        <div class="modal fade" id="complianceModal" tabindex="-1" aria-labelledby="complianceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="complianceModalLabel" data-editable="text" id="compliance-modal-title">Compliance</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/blog-4.png" class="img-fluid rounded" alt="Compliance">
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="text-primary mb-4" data-editable="text" id="compliance-modal-subtitle">Our Commitment to Compliance</h4>
+                                <p data-editable="text" id="compliance-modal-description">We maintain strict compliance standards through:</p>
+                                <ul>
+                                    <li data-editable="text" id="compliance-modal-point-1">Adherence to international and local regulations</li>
+                                    <li data-editable="text" id="compliance-modal-point-2">Regular internal and external audits</li>
+                                    <li data-editable="text" id="compliance-modal-point-3">Comprehensive risk management systems</li>
+                                    <li data-editable="text" id="compliance-modal-point-4">Ongoing staff training on compliance matters</li>
+                                    <li data-editable="text" id="compliance-modal-point-5">Regular updates to our compliance frameworks</li>
+                                </ul>
+                                <p data-editable="text" id="compliance-modal-assurance">Our robust compliance framework ensures that we maintain the highest standards of professional conduct while delivering value to our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs Start -->
+        <div class="container-fluid faq-section bg-light section-spacing">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <div class="mb-5">
+                                <h4 class="text-primary" data-editable="text" id="faq-subtitle">Some Important FAQ's</h4>
+                                <h1 class="display-4 mb-0" data-editable="text" id="faq-title">Common Frequently Asked Questions</h1>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Q: What services does CDCI Global offer?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body rounded">
+                                            A: CDCI Global provides a range of services including project management, capacity building, consulting, and technical assistance in various sectors such as infrastructure, health, education, and agriculture.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Q: What sectors does CDCI Global specialize in?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: CDCI Global specializes in sectors like infrastructure development, health systems strengthening, educational reforms, and agricultural advancements.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Q: Where is CDCI Global headquartered?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: CDCI Global is headquartered at 25309 Loganshire Terrace #104, Chantilly, VA 20152, USA, with various regional offices to support its global operations.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Q: How can I contact CDCI Global for business inquiries?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: For business inquiries, you can contact CDCI Global via email at <strong>info@cdciconsulting.com</strong> or through the contact form on their website.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Q: Does CDCI Global offer training and capacity-building programs?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: Yes, CDCI Global offers extensive training and capacity-building programs tailored to meet the needs of different sectors and organizations.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Q: Can I apply for a job at CDCI Global?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: Yes, CDCI Global frequently posts job openings on their website. You can visit the careers page to view and apply for available positions.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSeven">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            Q: What are some of the notable projects CDCI Global has worked on?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: CDCI Global has worked on numerous notable projects, including:  
+                                            - Financial Analysis of the Counties of Nairobi, Mombasa, and Nyeri  
+                                            - Ghana Commercial Agriculture Project (GCAP)  
+                                            - Consultancy Services to Undertake Business Process Improvements (BPI) for AUDA-NEPAD  
+                                            - Preparation of the IGAD Regional Development Plan for the World Bank-funded Regional Pastoral Livelihoods Resilience Project in IGAD countries  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingEight">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                            Q: Does CDCI Global work with international clients?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: Yes, CDCI Global collaborates with international clients, including governmental agencies, non-governmental organizations, and private sector entities.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/carousel-2.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+        <!-- Who We Work With -->
+        <div class="container-fluid partners-section section-spacing">
+            <div class="container">
+                <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <h4 class="text-primary" data-editable="text" id="partners-subtitle">Who We Work With</h4>
+                </div>
+                <div class="partners-carousel-container">
+                    <div class="bg-white rounded-3">
+                        <div class="owl-carousel vendor-carousel">
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/unops.png" alt="UNOPS">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/usaid.png" alt="USAID">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/world-bank-group.png" alt="World Bank Group">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/wsup.png" alt="WSUP">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/alfralti.png" alt="Alfralti">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/eritrea-1.png" alt="Eritrea">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/world-bank-group-1.png" alt="World Bank Group">
+                            </div>
+                            <div class="partner-item">
+                                <img src="https://cdci-global.com/wp-content/uploads/2022/07/wsup-1.png" alt="WSUP">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Who We Work With End -->
+         
+        <!-- Blog Start -->
+        <div class="container-fluid blog section-spacing">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary" data-editable="text" id="blog-subtitle">From Blog</h4>
+                    <h1 class="display-4 mb-4" data-editable="text" id="blog-title">Latest News And Updates</h1>
+                    <p class="mb-0" data-editable="text" id="blog-description">Stay informed with our latest news and industry updates</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <!-- News articles will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+      
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial section-spacing">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary" data-editable="text" id="testimonial-subtitle">Testimonial</h4>
+            <h1 class="display-4 mb-4" data-editable="text" id="testimonial-title">What Our Customers Are Saying</h1>
+            <p class="mb-0" data-editable="text" id="testimonial-description">Our clients share their experiences working with CDCI Global, highlighting our commitment to excellence in project management, training, health systems, education, agriculture, and more.</p>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+            <div class="testimonial-item bg-light rounded">
+                <div class="testimonial-content">
+                    <div class="testimonial-header">
+                        <h4 class="text-dark mb-1" data-editable="text" id="testimonial-1-name">John Smith</h4>
+                        <p class="mb-2" data-editable="text" id="testimonial-1-position">CEO of Infrastructure Innovations Inc.</p>
+                        <div class="d-flex text-primary mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="mb-0" data-editable="text" id="testimonial-1-description">"Working with CDCI Global on our infrastructure development project was a game-changer. Their expert project management and technical assistance ensured that we completed our project on time and within budget. Their team was professional, responsive, and dedicated to delivering exceptional results."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-item bg-light rounded">
+                <div class="testimonial-content">
+                    <div class="testimonial-header">
+                        <h4 class="text-dark mb-1" data-editable="text" id="testimonial-2-name">Mary Johnson</h4>
+                        <p class="mb-2" data-editable="text" id="testimonial-2-position">HR Manager at Health Solutions Ltd.</p>
+                        <div class="d-flex text-primary mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="mb-0" data-editable="text" id="testimonial-2-description">"CDCI Global's capacity building and training programs have significantly improved our team's skills and overall productivity. The tailored workshops and hands-on training sessions provided by their experienced consultants were invaluable."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-item bg-light rounded">
+                <div class="testimonial-content">
+                    <div class="testimonial-header">
+                        <h4 class="text-dark mb-1" data-editable="text" id="testimonial-3-name">Dr. Ahmed Karim</h4>
+                        <p class="mb-2" data-editable="text" id="testimonial-3-position">Director of Public Health at National Health Organization</p>
+                        <div class="d-flex text-primary mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="mb-0" data-editable="text" id="testimonial-3-description">"CDCI Global played a crucial role in strengthening our health systems. Their comprehensive approach to health system strengthening, from policy development to on-ground implementation, has transformed the way we operate."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-item bg-light rounded">
+                <div class="testimonial-content">
+                    <div class="testimonial-header">
+                        <h4 class="text-dark mb-1" data-editable="text" id="testimonial-4-name">Laura White</h4>
+                        <p class="mb-2" data-editable="text" id="testimonial-4-position">Education Program Manager at Global Education Trust</p>
+                        <div class="d-flex text-primary mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="mb-0" data-editable="text" id="testimonial-4-description">"Our collaboration with CDCI Global on educational reform initiatives has been incredibly successful. Their innovative strategies and thorough understanding of educational systems have helped us implement effective reforms."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-item bg-light rounded">
+                <div class="testimonial-content">
+                    <div class="testimonial-header">
+                        <h4 class="text-dark mb-1" data-editable="text" id="testimonial-5-name">Samuel Ochieng</h4>
+                        <p class="mb-2" data-editable="text" id="testimonial-5-position">President of Farmers' Cooperative Union</p>
+                        <div class="d-flex text-primary mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="mb-0" data-editable="text" id="testimonial-5-description">"CDCI Global's expertise in agricultural development has been instrumental in improving our farming practices and productivity. Their guidance on sustainable agriculture and modern techniques has empowered our community."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+        
+
+    <!-- Vendor Start -->
+    <div class="container-fluid vendor-section section-spacing">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary" data-editable="text" id="vendor-subtitle">Our Certifications</h4>
+            </div>
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+<!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-6 col-xl-5">
+                <div class="footer-item">
+                    <a href="index.html" class="p-0">
+                        <h1 class="text-white" data-editable="text" id="footer-logo">CDCI Global</h1>
+                    </a>
+                    <h4 class="text-white mt-3" data-editable="text" id="footer-social-title">Follow Us</h4>
+                    <div class="footer-btn d-flex">
+                        <a class="btn btn-light me-2" href="#" data-editable="link" id="footer-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light me-2" href="#" data-editable="link" id="footer-twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light me-2" href="#" data-editable="link" id="footer-instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-light" href="#" data-editable="link" id="footer-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4" data-editable="text" id="footer-contact-title">Contact Info</h4>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <p class="text-white mb-0" data-editable="text" id="footer-address">CDCI Global, Inc. 25309 Loganshire Terrace, Unit 104 Chantilly, VA 20152</p>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <p class="text-white mb-0" data-editable="text" id="footer-email">info@cdciconsulting.com</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-phone-alt text-primary me-3"></i>
+                        <p class="text-white mb-0" data-editable="text" id="footer-phone">+1 (703) 542-5895</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <h4 class="text-white mb-4" data-editable="text" id="footer-newsletter-title">Newsletter</h4>
+                    <p class="text-white" data-editable="text" id="footer-newsletter-text">Stay updated with our latest news and updates.</p>
+                    <div class="position-relative">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary w-100 mt-2" data-editable="text" id="footer-subscribe-btn">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-end mb-md-0">
+                <span class="text-body" data-editable="text" id="copyright-text">
+                    <a href="index.html" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i> 2025 CDCI Global</a> All rights reserved. 
+                    Washington, DC | Kenya | Rwanda
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- Search Javascript -->
+<script src="js/search.js"></script>
+
+<!-- Add this script just before the closing body tag -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const blogContainer = document.querySelector('.blog .row');
+    
+    // Default articles to show if no news is cached
+    const defaultArticles = [
+        {
+            title: "CDCI inks deal with the State Department of Housing and Development",
+            description: "CDCI inks deal with the State Department of Housing and Development (SDHUD), to provide Fiscal Agency Services.",
+            publishedAt: new Date(),
+            source: { name: "CDCI News" },
+            url: "#",
+            image: "img/slum.jpg"
+        },
+        {
+            title: "Consultancy Services - Alignment with NAIPs",
+            description: "Consultancy Services - Alignment with National Agricultural Investment Plans (NAIPs) and Country Agribusiness Partnership Framework.",
+            publishedAt: new Date(),
+            source: { name: "Agriculture" },
+            url: "#",
+            image: "img/coffee.jpg"
+        },
+        {
+            title: "CDCI Expands Its Workforce",
+            description: "CDCI has recently increased its staff complement in response to its clients' needs.",
+            publishedAt: new Date(),
+            source: { name: "Company News" },
+            url: "#",
+            image: "img/staff.jpg"
+        }
+    ];
+
+    // Try to get cached news articles
+    const newsCache = localStorage.getItem('cdciNewsCache');
+    let articlesToShow = defaultArticles;
+
+    if (newsCache) {
+        const {timestamp, articles} = JSON.parse(newsCache);
+        const oneHourAgo = Date.now() - (60 * 60 * 1000);
+        
+        // Only use cached articles if they're less than 1 hour old and we have articles
+        if (timestamp > oneHourAgo && articles && articles.length > 0) {
+            articlesToShow = articles.slice(0, 3);
+        }
+    }
+
+    // Always update the blog section with either cached or default articles
+    updateBlogSection(articlesToShow);
+
+    function updateBlogSection(articles) {
+        if (!blogContainer) return;
+
+        const blogHTML = articles.map((article, index) => {
+            const delay = 0.2 + (index * 0.2);
+            const category = getCategoryFromArticle(article);
+            
+            // Determine if this is an external news article or internal blog post
+            const isExternalNews = article.url && article.url !== '#';
+            const linkUrl = isExternalNews ? article.url : `blog-detail.html?title=${encodeURIComponent(article.title)}&category=${encodeURIComponent(category)}&image=${encodeURIComponent(article.image || getPlaceholderImage(category))}&description=${encodeURIComponent(article.description)}&date=${encodeURIComponent(article.publishedAt)}`;
+            const linkTarget = isExternalNews ? '_blank' : '_self';
+            
+            return `
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="${delay}s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="${article.image || getPlaceholderImage(category)}" 
+                                 alt="${article.title}"
+                                 onerror="this.src='img/blog-1.png'">
+                            <div class="blog-categiry py-2 px-4">
+                                <span>${article.source.name}</span>
+                            </div>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between mb-3">
+                                <div class="small">
+                                    <span class="fa fa-calendar text-primary"></span> 
+                                    ${new Date(article.publishedAt).toLocaleDateString()}
+                                </div>
+                            </div>
+                            <a href="${linkUrl}" target="${linkTarget}" class="h4">
+                                ${article.title}
+                            </a>
+                            <p>${article.description || ''}</p>
+                            <a href="${linkUrl}" target="${linkTarget}" class="btn p-0">
+                                Read More <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        blogContainer.innerHTML = blogHTML;
+    }
+
+    function getCategoryFromArticle(article) {
+        const title = (article.title || '').toLowerCase();
+        const description = (article.description || '').toLowerCase();
+        
+        if (title.includes('governance') || description.includes('governance')) {
+            return 'governance';
+        } else if (title.includes('agriculture') || description.includes('agriculture')) {
+            return 'agriculture';
+        } else if (title.includes('water') || description.includes('water')) {
+            return 'wash';
+        } else if (title.includes('trade') || description.includes('trade')) {
+            return 'trade';
+        }
+        return 'default';
+    }
+
+    function getPlaceholderImage(category) {
+        const placeholders = {
+            governance: "https://placehold.co/400x300/2B3B85/FFFFFF/png?text=Governance",
+            agriculture: "https://placehold.co/400x300/3E7C17/FFFFFF/png?text=Agriculture",
+            wash: "https://placehold.co/400x300/0096C7/FFFFFF/png?text=WASH",
+            trade: "https://placehold.co/400x300/BC6C25/FFFFFF/png?text=Trade",
+            default: "https://placehold.co/400x300/015FC9/FFFFFF/png?text=CDCI+Global"
+        };
+        return placeholders[category] || placeholders.default;
+    }
+});
+</script>
+</body>
+
+</html>
